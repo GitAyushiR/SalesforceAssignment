@@ -12,7 +12,7 @@
     </values>
     <values>
         <field>Value__c</field>
-        <value xsi:type="xsd:string">True</value>
+        <value xsi:type="xsd:string">False</value>
     </values>
     <values>
         <field>Version__c</field>
