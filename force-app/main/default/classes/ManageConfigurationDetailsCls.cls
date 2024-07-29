@@ -1,4 +1,4 @@
-//This class is used by other classes where the value is needed
+//This class is used by other classes where the value is needed for the data types
 public class ManageConfigurationDetailsCls {
     
     public static WrapperDetails getDataTypeValue(string dataType){
