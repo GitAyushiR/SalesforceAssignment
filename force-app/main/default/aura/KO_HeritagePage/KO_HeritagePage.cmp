@@ -1,0 +1,104 @@
+<aura:component   implements="forceCommunity:availableForAllPageTypes" access="global" >
+    
+    <div>
+        <div class="slds-grid slds-wrap media-main-section animated-container slds-is-relative ">
+            <div class="slds-col slds-size_1-of-1 slds-medium-size_12-of-12 slds-large-size_12-of-12 ">
+                <div class="slds-grid slds-wrap">
+                    <div class="slds-col slds-size_1-of-1 slds-small-size_1-of-1 slds-medium-size_5-of-12 slds-large-size_5-of-12 slds-small-order--1 slds-medium-order--2 slds-large-order--2">
+                    	<div class="slds-col slds-size_1-of-1">
+                        	<div class="header"  >
+                                <p class="GermaniaoneRegular" style="border-color: #ED6803; font-family: 'GermaniaOne'; ">Heritage &amp;<br/>Accolades</p>
+                                
+                            </div>
+                            <div class="heritageText" style="font-family: 'Josefin_Sans'; font-size:16px; letter-spacing: 0.14px; color: #000000; opacity: 1;">
+                                
+                            	<p class="josefinSans-font font-16 line-height-23 slds-m-bottom_medium">
+                                  Ketel One Vodka is inspired by the Nolet family’s 325+ years of distilling expertise.
+								</p>
+                                  <p class="josefinSans-font font-16 line-height-23 slds-m-bottom_medium">
+                                Founded in the small fishing town of Schiedam, Holland, in 1691. 
+
+                                  </p>
+                                    
+                                
+                                <p class="josefinSans-font font-16 line-height-23 slds-m-bottom_medium">
+                                    A tradition passed down for over 11 generations.
+
+                                    
+                                </p>
+                                    
+                               
+                                <p class="josefinSans-font font-16 line-height-23 slds-m-bottom_medium">
+                                    Each batch of Ketel One is personally approved by a member of the family. 
+
+                                   
+                                </p>
+                                   
+                                
+                                <p class="josefinSans-font font-16 line-height-23">
+                                  Following Ketel One Citroen, Ketel One Oranje flavored vodka launches, made with natural oils from Valencia and Mandarin oranges, using the classic Ketel One Vodka as its base.
+
+                                   
+                                </p>
+                             </div>
+                            
+                        </div>
+                    </div>
+                    <div class="slds-col slds-size_1-of-1 slds-small-size_1-of-1 slds-medium-size_12-of-12 slds-large-size_12-of-12 slds-small-order--2 slds-medium-order--3 slds-large-order--3">
+                    	
+                        <div class="slds-grid slds-wrap">
+                             
+                        	<div class="slds-col slds-size_1-of-1 sourceText" style="font-family:'Josefin_Sans'; letter-spacing: 0.35px; color: #000; opacity: 1;">
+                                
+                                <div class="sourceText1" style="font-size:14px; font-weight:bold;">
+                        		<p class="color00000 font-14 line-height-18 JosefinSans-Bold slds-m-bottom_x-small">
+                                    VOTED #1 BEST SELLING VODKA BY BARTENDERS<br/> OF THE WORLD’S 50 BEST BARS 7 YEARS IN A ROW 
+                                    
+                                    </p></div>
+                                    
+                                <div class="sourceText2" style="font-size:10px; ">
+                                
+                            	<p class="color00000 font-10 line-height-14 josefinSans-font">
+                                    Source: Nielsen Total US XAOC Plus Liquor Census, 52 Weeks Ending May 18, 2019 -->
+                                   
+                                </p>
+                                </div>  
+                                
+                        	</div>
+                        	<div class="medalDiv">
+                          	<img  src="{!$Resource.KO_HERITAGE_5}" />
+                               
+                        	</div>
+                            <div class="slds-p-left_xx-large slds-m-left--xx-large slds-p-top_small">
+                                <img  src="{!$Resource.KO_Arrow_Right}" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slds-col slds-size_1-of-1 slds-small-size_1-of-1 slds-medium-size_7-of-12 slds-large-size_7-of-12 slds-small-order--3 slds-medium-order--1 slds-large-order--1">
+                    	<div class="slds-col slds-size_1-of-1 images">
+                            <div class="warehouse">
+                                <img  src="{!$Resource.KO_HERITAGE_1}" />
+                            </div>
+                            <div class="slds-grid slds-wrap">
+                                <div class="bottle">
+                                     <img  src="{!$Resource.KO_HERITAGE_2}" />
+                                </div>
+                                <div class="goldSeal">
+                                   <img  src="{!$Resource.KO_HERITAGE_3}" /> 
+                                </div>
+                                <div class="worker">
+                                 <img  src="{!$Resource.KO_HERITAGE_4}" />
+                            	</div>
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+</aura:component>

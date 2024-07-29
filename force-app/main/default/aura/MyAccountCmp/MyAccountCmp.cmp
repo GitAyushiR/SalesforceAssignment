@@ -1,0 +1,40 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" access="global" >
+	<aura:attribute name="condition" type="boolean" default="false"/>
+    <div class="head">
+        
+    <div class="slds-gridslds-grid--vertical slds-navigation-list--vertical">
+       <div class ="header">
+           <p class="ab1">My Account</p></div>
+  				<div class="header1">   
+  					<ul class="slds-navigation-list--vertical slds-has-block-links--space">
+      					<div class="slds-navigation-list--vertical__action slds-text-link--reset" >
+          					<li><a href="javascript:void(0);" >Add Account</a></li></div>
+      							<div class="slds-navigation-list--vertical__action slds-text-link--reset">
+          							<li><a href="javascript:void(0);" onclick="{!c.myAction}" >Account Details</a></li></div>
+      								   <div class="slds-navigation-list--vertical__action slds-text-link--reset">
+          									<li><a href="javascript:void(0);" >Recharge</a></li></div>
+      											<div class="slds-navigation-list--vertical__action slds-text-link--reset" >
+         												 <li><a href="javascript:void(0);" >Transaction History</a></li></div>
+      											</ul></div>
+       <div class="header2">
+       <ul class="slds-navigation-list--vertical slds-has-block-links--space">
+      <div class="slds-navigation-list--vertical__action slds-text-link--reset" >
+          <li><a href="javascript:void(0);" >Auto Recharge</a></li></div>
+      <div class="slds-navigation-list--vertical__action slds-text-link--reset" >
+          <li><a href="javascript:void(0);" >Update Account Information</a></li></div>
+           </ul></div>
+       <div class="header3">
+       <ul class="slds-navigation-list--vertical slds-has-block-links--space">
+      <div class="slds-navigation-list--vertical__action slds-text-link--reset" >
+          <li><a href="javascript:void(0);" >Alert Preference</a></li></div>
+           </ul></div>
+  
+</div>
+    </div>
+
+    <aura:if isTrue="{!v.condition}">
+        <p><c:MyAccountDetails/></p>
+        <p><c:weatherComponent/></p>
+        <p><c:AccountStatus/></p>
+    </aura:if>
+</aura:component>

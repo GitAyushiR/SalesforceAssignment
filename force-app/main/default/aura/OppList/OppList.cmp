@@ -1,0 +1,43 @@
+<aura:component  implements="forceCommunity:availableForAllPageTypes" access="global">
+	<aura:handler name="init" value="{!this}" action="{!c.doInit}" /> 
+     <aura:attribute name="opportunities" type="List" />
+    
+    <table class="slds-table slds-table_bordered slds-table_striped slds-table_cell-buffer slds-table_fixed-layout">
+         <thead>
+           <tr class="slds-text-heading_label">
+             <!-- Fields - ID, Name , Phone , Owner Id , Account Number -->
+              
+             <th scope="col"><div class="slds-truncate" title="AccountId">Account_Id</div></th> 
+             <th scope="col"><div class="slds-truncate" title="Amount">Amount</div></th>
+             <th scope="col"><div class="slds-truncate" title="CloseDate">Close_Date</div></th>
+             <th scope="col"><div class="slds-truncate" title="ExpectedRevenue">Expected_Revenue</div></th> 
+             <th scope="col"><div class="slds-truncate" title="Name">Name</div></th>
+             <th scope="col"><div class="slds-truncate" title="Type">Type</div></th>
+             <th scope="col"><div class="slds-truncate" title="Submit">
+                 <lightning:button
+                        label="Submit"
+                        iconName="utility:Submit"
+                        iconPosition="center"
+                        variant="brand"
+                        type="submit"
+                  /></div></th>
+           
+             
+           </tr>
+         </thead>
+         <tbody>
+            <!-- Use the Apex model and controller to fetch server side data -->
+             
+           <aura:iteration items="{!v.opportunities}" var="opportunity">
+               <tr>
+               	   <td ><div class="slds-truncate" title="{!opportunity.Id}">{!opportunity.AccountId}</div></td>
+                   <td><div class="slds-truncate" title="{!opportunity.Amount}">{!opportunity.Amount}</div></td>
+                   <td><div class="slds-truncate" title="{!opportunity.CloseDate}">{!opportunity.CloseDate}</div></td>
+                   <td><div class="slds-truncate" title="{!opportunity.ExpectedRevenue}">{!opportunity.ExpectedRevenue}</div></td>
+                   <td><div class="slds-truncate" title="{!opportunity.Name}">{!opportunity.Name}</div></td>
+                   <td><div class="slds-truncate" title="{!opportunity.Type}">{!opportunity.Type}</div></td>
+               </tr>
+           </aura:iteration>
+         </tbody>
+    </table>
+</aura:component>

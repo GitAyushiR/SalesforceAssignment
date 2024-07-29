@@ -1,0 +1,38 @@
+.THIS.page{
+    position: absolute;
+    right: 0px;
+    margin-top:-138px;
+    margin-right:104px;
+  	width:320px;
+    height:175px;
+    
+}
+.THIS .secondblock{
+    text-align:left;
+    width:290px;
+    border-bottom:3px solid red;
+}
+
+
+	.THIS .firstblock{
+    text-align:center;
+    padding-top:8px;
+    width:320px;
+    height:40px;
+    background-color:#F9A59F;
+    border-top:3px solid red;
+    
+}
+.THIS .thirdblock{
+    text-align:left;
+    border-bottom:3px solid red;
+	width:290px;
+}
+.THIS .fourthblock{
+    text-align:left;
+    
+	width:290px;
+}
+.THIS .fifthblock{
+    border-bottom:3px solid red;
+}

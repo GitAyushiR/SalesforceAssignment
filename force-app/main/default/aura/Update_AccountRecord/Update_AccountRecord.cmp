@@ -1,0 +1,90 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" controller="Update_AccountRecord_Controller">
+	<aura:attribute name="account" type="Account" />
+	<aura:attribute name="hasErrors" type="Boolean"/>
+    <aura:attribute name="mapOfValues" type="Map"/>
+	<aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+
+    <aura:if isTrue="{!v.hasErrors}">
+        <div class="recordSaveError">
+            <ui:message title="Error" severity="error" closable="false">
+                The new contact can't be saved because it's not valid.
+                Please review and correct the errors in the form.
+            </ui:message>
+        </div>
+    </aura:if>
+	<!-- Display the new form -->
+    <div class="slds-form--stacked">
+		<div class="slds-form-element">
+            <label class="slds-form-element__label" for="AccountName">
+               Account Name:
+            </label>
+            <div class="slds-form-element__control">
+              <ui:inputText class="slds-input" aura:id="accountName"
+                value="{!v.account.Name}" />
+            </div>
+        </div>
+        <div class="slds-form-element">
+          <!-- <label class="slds-form-element__label" for="Type">
+                Type:
+            </label>
+        <div class="slds-form-element__control">
+              <ui:inputText class="slds-input" aura:id="Type"
+                value="{!v.account.Type}" />
+            </div>-->
+            <lightning:select label="Type" name="Type" aura:id="Type"  >
+            <aura:iteration items="{!v.mapOfValues}"  var="mapKey" indexVar="key">
+               <aura:if isTrue="{!mapKey.key == 'Type'}">
+                <aura:iteration  items="{!mapKey.value}" var="mapValue">
+                     <option value="{!mapValue}" selected="{!mapValue == v.account.Type}">{!mapValue}</option>
+                </aura:iteration>  
+               </aura:if>
+                </aura:iteration> 
+            </lightning:select>
+          </div>
+
+        <div class="slds-form-element">
+           <lightning:select label="Industry" name="Industry" aura:id="Industry" >
+            <aura:iteration items="{!v.mapOfValues}"  var="mapKey" indexVar="key">
+               <aura:if isTrue="{!mapKey.key == 'Industry'}">
+                <aura:iteration  items="{!mapKey.value}" var="mapValue">
+                     <option value="{!mapValue}" selected="{!mapValue == v.account.Industry}">   {!mapValue}</option>
+                </aura:iteration>  
+               </aura:if>
+                  </aura:iteration> 
+            </lightning:select>
+          </div>
+		<div class="slds-form-element">
+            <label class="slds-form-element__label" for="Employees">
+                Employees:
+            </label>
+            <div class="slds-form-element__control">
+              <ui:inputPhone class="slds-input" aura:id="Employees"
+                value="{!v.account.NumberOfEmployees}" required="true"/>
+            </div>
+        </div>
+        <div class="slds-form-element">
+            <!--<label class="slds-form-element__label" for="Ownership">Ownership: </label>
+            <div class="slds-form-element__control">
+              <ui:inputEmail class="slds-input" aura:id="Ownership"
+                value="{!v.account.Ownership}" />
+            </div>-->
+             <lightning:select label="Ownership" name="Ownership" aura:id="Ownership" >
+            <aura:iteration items="{!v.mapOfValues}"  var="mapKey" indexVar="key">
+               <aura:if isTrue="{!mapKey.key == 'Ownership'}">
+                <aura:iteration  items="{!mapKey.value}" var="mapValue">
+               <option value="{!mapValue}" selected="{!mapValue == v.account.Ownership}">   {!mapValue}</option>
+                </aura:iteration>  
+               </aura:if>
+                </aura:iteration> 
+            </lightning:select>
+        </div>
+
+        <div class="slds-form-element">
+            <ui:button label="Cancel" press="{!c.Cancel}"
+                class="slds-button slds-button--neutral" />
+            <ui:button label="Save" press="{!c.SaveRecord}"
+                class="slds-button slds-button--brand" />
+        </div>
+
+    </div>
+</aura:component>

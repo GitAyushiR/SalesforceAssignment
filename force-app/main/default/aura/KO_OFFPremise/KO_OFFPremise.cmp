@@ -1,0 +1,99 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" access="global" >
+    
+    <div >
+        <div class="slds-grid slds-wrap media-main-section animated-container slds-is-relative">
+            <div class="slds-col slds-size_1-of-1 slds-medium-size_12-of-12 slds-large-size_12-of-12  ">
+                <div class="slds-grid slds-wrap">
+                    <div class="slds-col slds-size_1-of-1  images">
+                        <img src="{!$Resource.KO_OFFpremise1}" style="position:absolute;  "/>
+                        <img src="{!$Resource.KO_OFFpremise2}" style="position:relative; "/>
+                    </div>
+                    <div class="header"  >
+                        <p class="heading"  >Off Premise</p>
+                    </div>
+                    <div class="border-top"></div>
+                    <div class="slds-col slds-size_1-of-1 slds-small-size_1-of-1 slds-medium-size_4-of-12 slds-small-order--1 slds-medium-order--1 slds-large-order--1 text1 ">
+                        <div class="slds-grid slds-wrap">
+                            <p class=" slds-m-top_xx-large">
+                                Super Premium Flavored Vodka Is Driving Category Growth
+                            </p>
+                            <div class="graph1">
+                                <div class="bar1">
+                                    <p style="margin-top:-25px;font-weight:bold; font-size:20px;">2.0%</p>
+                                    <p style="margin-top:15px;" >Total Vodka </p>
+                                </div>
+                                <div class="bar2">
+                                    <p style="margin-top:-25px; font-weight:bold; font-size:20px;">2.1%</p>
+                                    <p style="margin-top:20px;">Total Unflavored Vodka</p>
+                                </div>
+                                <div class="bar3">
+                                    <p style="margin-top:-25px; font-weight:bold; font-size:20px;">18.3%</p>
+                                    <p style="margin-top:152px;">Super Premium Flavored Vodka</p>
+                                </div>
+                            </div>
+                            <p class=" slds-m-top_xx-large order1_4">
+                                Case Vol % Chg.
+                            </p>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="slds-col slds-size_1-of-1 slds-small-size_1-of-1 slds-medium-size_4-of-12 slds-small-order--1 slds-medium-order--1 slds-large-order--2 text2 ">
+                        <div class="slds-grid slds-wrap">
+                            <p class=" slds-m-top_xx-large order1">
+                                Orange and Citrus Flavored Vodkas Are Growing Double Digits
+                            </p>
+                            <img src="{!$Resource.KO_OFFpremise3}" class="img1" />
+                            <p class=" slds-m-top_xx-small order2">
+                                Citrus Flavored Vodka: <span style="font-weight: Bold; font-size:24px;font-family:'Josefin_Sans';letter-spacing: -0.54px;color: #5D5C5C;opacity: 1;">+12%</span>
+                            </p>
+                            <img src="{!$Resource.KO_OFFpremise4}" class="img2"/>
+                            <p class=" slds-m-top_xx-large order3">
+                                Orange Flavored Vodka: <span style="font-weight: Bold;font-size: 24px;font-family:'Josefin_Sans';letter-spacing: -0.54px;color: #5D5C5C;opacity: 1;">+23%</span>
+                            </p>
+                            <p class=" slds-m-top_xx-large order4">
+                                Case Vol % Chg.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="slds-col slds-size_1-of-1 slds-small-size_1-of-1 slds-medium-size_4-of-12 slds-small-order--1 slds-medium-order--1 slds-large-order--3 text3 ">
+                        <div class="slds-grid slds-wrap">
+                            <p class=" slds-m-top_xx-large">
+                                Combined, Ketel One Base Flavors Are Among the TOP 5 Brands in Super Premium Flavored Vodka
+                            </p>
+                            <div class="graph2">
+                                <div class="vbar1">
+                                    <p style="margin-top:-25px;font-weight:bold; font-size:20px;">6,571</p>
+                                    <p style="margin-top:48px; width: 72px;height: 24px;">Total Three Olives Flavors</p>
+                                </div>
+                                <div class="vbar2">
+                                    <p style="margin-top:-25px;font-weight:bold; font-size:20px;">17,250</p>
+                                    <p style="margin-top:135px;width: 68px;height: 48px;">Ketel One Base Flavors: Citroen &amp; Oranje</p>
+                                </div>
+                            </div>
+                            <p class=" slds-m-top_xx-large order5">
+                                Case Vol % Chg.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="slds-col slds-size_1-of-1 slds-large-order--3">
+                    <div class="slds-grid slds-wrap" >
+                        <div class="slds-p-left_large slds-p-top_small">
+                            <img src="{!$Resource.KO_Arrow_Left}" />
+                            <div class="source">
+                                <p>Source: Nielsen Total US XAOC Plus Liquor Census, 52 Weeks Ending May 18, 2019</p>
+                            </div>
+                        </div>
+                        <div class="slds-p-right_large slds-p-top_small" style="margin-left:865px;">
+                            <img src="{!$Resource.KO_Arrow_Right}" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</aura:component>

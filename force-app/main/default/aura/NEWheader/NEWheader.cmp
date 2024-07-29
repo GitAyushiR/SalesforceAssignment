@@ -1,0 +1,36 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	 <aura:attribute name="selTabId" type="string" default="1" />
+    
+    <lightning:tabset selectedTabId="{!v.selTabId}" >
+        <lightning:tab label="Fruits" id="1">
+            <c:KO_FLAVOUR/>
+        </lightning:tab>
+        
+        <lightning:tab label="Vegetables" id="2">
+            <c:KO_HeritagePage/>
+        </lightning:tab>
+        
+        <lightning:tab label="Colors" id="3">
+            <p>Red</p>
+            <p>Green</p>
+            <p>Blue</p>
+        </lightning:tab>
+        
+         <lightning:tab label="Cars" id="4">
+            <p>BMW</p>
+            <p>Maserati</p>
+            <p>Audi</p>
+        </lightning:tab>
+        
+    </lightning:tabset>
+ 
+    <div class="slds-clearfix">
+      <div class="slds-float_left">
+          <!--disabled the back button on first Tab-->    
+        <lightning:button disabled="{!v.selTabId == '1'}" variant="neutral" label="Back" onclick="{!c.back}" />
+      </div>
+      <div class="slds-float_right">
+        <lightning:button variant="brand" label="Next" onclick="{!c.next}" />
+      </div>
+    </div>
+</aura:component>

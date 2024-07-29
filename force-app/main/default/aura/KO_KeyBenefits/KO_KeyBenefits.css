@@ -1,0 +1,116 @@
+.THIS .media-main-section{
+    height:693px;
+    width:1024px;
+}
+
+.THIS .TastingNotesText{
+    width:380px;
+    font-family: 'Josefin_Sans';
+    font-size:21px; 
+    letter-spacing: 0.42px; 
+    color: #000000; 
+}
+.THIS .border-top{
+    border-top: 4px solid #FDE57B;
+    margin-top:-4px;
+    width:182px;
+}
+
+.THIS .images{
+    margin-left:22px;
+    margin-top:41px;
+    
+}
+.THIS .TastingNotes{
+    position:relative;
+}
+.THIS .top{
+    position :absolute;
+    top: 85px;
+    color: black;
+left: 66px;
+width: 475px;
+height: 151px;
+    text-align: left;
+font-family: 'Josefin_Sans';
+    font-weight:bold;
+    font-size: 30px;
+letter-spacing: 3px;
+opacity: 1;
+}
+.THIS .middle{
+     position :absolute;
+    top: 313px;
+left: 66px;
+width: 377px;
+height: 31px;
+    text-align: left;
+font-family: 'Josefin_Sans';
+    font-size:10px;
+    
+letter-spacing: 0;
+color: black;
+opacity: 1;
+}
+.THIS .bottom{
+    position :absolute;
+    top: 320px;
+left: 66px;
+width: 496px;
+height: 152px;
+    text-align: left;
+font-size:32px ;
+    font-family:'Josefin_Sans';
+letter-spacing: 3.2px;
+opacity: 1;
+    color: black;
+    font-weight: bold;
+}
+.THIS .righttop{
+    position :absolute;
+    top: 70px;
+left: 652px;
+width: 151px;
+height: 135px;
+    text-align: left;
+font-weight: Bold ; 
+    font-family:'Josefin_Sans';
+    font-size:135px;
+letter-spacing: 2.7px;
+color: #F6D000;
+opacity: 1;
+    
+}
+.THIS .rightmiddle{
+    position :absolute;
+    top: 235px;
+    left: 652px;
+    width: 158px;
+    height: 15px;
+    text-align: center;
+    font-size:  14px;
+    font-family: 'Josefin_Sans';
+    letter-spacing: 0.28px;
+    color: #000000;
+    opacity: 1;
+    
+}
+.THIS .rightbottom{
+    position :absolute;
+    top: 325px;
+    left: 652px;
+    width: 282px;
+    height: 135px;
+    text-align: left;
+    color: #F6D000;
+    opacity: 1;
+    font-weight: bold;
+    font-size:135px;
+    font-family:'Josefin_Sans';
+    letter-spacing: 2.7px;
+
+}
+@font-face {
+    font-family:'Josefin_Sans' ;
+    src: url('/resource/1566989749000/Josefin_Sans');
+}

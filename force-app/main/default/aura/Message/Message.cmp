@@ -1,0 +1,9 @@
+<aura:component >
+<aura:attribute name="myAttribute" type="String"/>
+
+  
+
+
+    <lightning:inputField aura:id="myAtt" fieldName="Company" value="{!v.myAttribute}" label="Attribute" onchange="{!c.myChange}"/>
+
+</aura:component>

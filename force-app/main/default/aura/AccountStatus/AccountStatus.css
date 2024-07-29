@@ -1,0 +1,41 @@
+.THIS.page{
+    position: absolute;
+  right: 0px;
+    margin-right:104px;
+    margin-top:-350px;
+    border-bottom:3px solid red;
+    width:320px;
+    height:200px;
+}
+.THIS .heading {
+	 text-align:center;
+    padding-top:8px;
+    width:320px;
+    height:40px;
+    background-color:#F9A59F;
+    border-top:5px solid red;
+   
+
+}
+.THIS .block1 {
+	 text-align:left;
+    padding-top:5px;
+    width:285px;
+    height:40px;
+    
+    border-bottom:3px solid red;
+}
+.THIS .block2 {
+	 text-align:left;
+    padding-top:5px;
+    width:255px;
+    height:80px;
+    
+    
+}
+
+.THIS .block3 {
+	 text-align:left;
+    color:blue;
+    
+}

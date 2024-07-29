@@ -1,0 +1,55 @@
+.THIS .header{
+    text-align:center;
+    padding-top:0px;
+    width:240px;
+    height:40px;
+    background-color:#F9A59F;
+    border-top:5px solid red;
+  margin-top:22px;
+    margin-left:68px;
+}
+
+.THIS .top{
+    text-align:left;
+    border-bottom:3px solid red;
+    background-color:#F6D7D5;
+    margin-left:68px;
+    width:240px;
+    
+}
+.THIS .middle{
+    text-align:left;
+    border-bottom:3px solid red;
+    background-color:#F6D7D5;
+    margin-left:68px;
+    width:240px;
+    
+}
+.THIS .bottom{
+    text-align:left;
+    background-color:#F6D7D5;
+    width:240px;
+    margin-left:68px;
+}
+.THIS .head{
+    text-align:center;
+    padding-top:8px;
+    width:240px;
+    height:40px;
+    background-color:#F9A59F;
+   
+}
+
+.Top.THIS {
+    text-align:left;
+    border-bottom:3px solid red;
+    border-top:6px solid red;
+    background-color:#F6D7D5;
+    margin-left:68px;
+    width:240px;
+    
+}
+.page.THIS {
+    width:240px;
+    height:450;
+}

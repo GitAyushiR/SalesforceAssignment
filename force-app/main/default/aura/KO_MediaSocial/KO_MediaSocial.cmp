@@ -1,0 +1,65 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" access="global" >
+	
+    
+    <div>
+        <div class="slds-grid slds-wrap media-main-section animated-container slds-is-relative">
+            <div class="slds-col slds-size_1-of-1 slds-medium-size_12-of-12 slds-large-size_12-of-12 ">
+                <div class="slds-grid slds-wrap">
+                    <div class="slds-col slds-size_1-of-1 slds-small-size_1-of-1 slds-medium-size_5-of-12 slds-large-size_5-of-12 slds-small-order--1 slds-medium-order--1 slds-large-order--1">
+                    	<div class="slds-col slds-size_1-of-1 " style="margin-left:50px;">
+                        	<div class="header" style="margin-top:125px; "  >
+                                
+                                <p class="heading"  >Social</p>
+                                    
+                                
+                            </div>
+                            <div class="border-top"></div>
+                            <div class="TastingNotesText">
+                                
+                                <p class="slds-m-top_xx-large " >
+                                    Exposure of Trademark on Facebook, Instagram and Pinterest to support “Better Drinks” recipes and occasions. 
+                                </p>
+                                <p class="slds-m-top_xx-large " >
+                                    Reaching 41% of adults 21-54 with an average of 2 exposures over 13 weeks.   
+                                </p>
+                               
+                             </div>
+                            <div class="slds-m-top_xx-large grp_pics" style="margin-left:28px;">
+                                <img src="{!$Resource.KO_F}"/>
+                                <img src="{!$Resource.KO_I}"  style="margin-left:25px;"/>
+                                <img src="{!$Resource.KO_P}"  style="margin-left:20px;"/>
+                            </div>
+                            
+                        </div>
+                    </div>
+                                       <div class="slds-col slds-size_1-of-1 slds-small-size_1-of-1 slds-medium-size_7-of-12 slds-large-size_7-of-12 slds-small-order--3 slds-medium-order--2 slds-large-order--2">
+                    	<div class="slds-col slds-size_1-of-1 images">
+                            
+                            <div class="TastingNotes">
+                                
+                                <img src="{!$Resource.KO_Social}"/>
+                                
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="slds-col slds-size_1-of-1 slds-small-size_1-of-1 slds-medium-size_12-of-12 slds-large-size_12-of-12 slds-small-order--2 slds-medium-order--3 slds-large-order--3">
+                    	
+                        <div class="slds-grid slds-wrap">
+                            <div class="slds-p-left_large slds-p-top_medium">
+                            <img src="{!$Resource.KO_Arrow_Left}" />
+                                
+                        </div>
+                            
+                            <div class="slds-p-right_large slds-p-top_medium" style="margin-left:805px;">
+                            <img src="{!$Resource.KO_Arrow_Right}" />
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+</aura:component>

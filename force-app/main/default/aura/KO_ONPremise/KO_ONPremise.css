@@ -1,0 +1,251 @@
+.THIS .media-main-section{
+    height:693px;
+    width:1024px;
+    
+}
+.THIS .header{
+    margin-top:40px;
+    width:184px;
+}
+
+.THIS .border-top{
+    border-top: 5px solid #FDE57B;
+    margin-top:-479px;
+    width: 290px;
+    margin-left: 368px;
+}
+.THIS .header p{
+    font-size:67px;
+    line-height:90px;
+    display:inline;
+    color:#000;
+    border-bottom: 4px solid;
+    font-family: 'GermaniaOne' ;
+    letter-spacing: 0;
+    text-align:left;
+    opacity: 1;
+    border-color: #ED6803; 
+    
+}
+.THIS .images{
+    margin-left:22px;
+    margin-top:41px;
+    
+}
+
+.THIS .header{
+    position :absolute;
+    top: 10px;
+    left: 331px;
+    width: 362px;
+    height: 93px;
+    text-align: center;
+    letter-spacing: 0;
+    color: #000000;
+    opacity: 1;
+} 
+.THIS .source{
+    position :absolute;
+    top: 640px;
+    left: 211px;
+    width: 602px;
+    height: 25px;
+    text-align: center;
+    font-family: 'Josefin_Sans';
+    font-size:10px;
+    letter-spacing: 0.2px;
+    color: black;
+    opacity: 1;
+}
+
+@font-face {
+    font-family: 'GermaniaOne';
+    src: url('/resource/1566988981000/GermaniaOne'); 
+    
+}
+@font-face {
+    font-family:'Josefin_Sans' ;
+    src: url('/resource/1566989749000/Josefin_Sans');
+}
+.THIS .order5{
+    position :absolute;
+    top: 176px;
+    left: 73px;
+    width: 254px;
+    height: 38px;
+    text-align: center;
+    font-weight: Bold;
+    font-size:16px;
+    font-family:'Josefin_Sans';
+    letter-spacing: 0.32px;
+    color: #000000;
+    opacity: 1;   
+}
+
+.THIS .para1{
+    position :absolute;
+    top: 176px;
+    left: 687px;
+    width: 220px;
+    height: 61px;
+    font-family:'Josefin_Sans';  
+    text-align: center;
+    font-weight:bold;
+    font-size:16px; 
+    letter-spacing: 0.32px;
+    color: #000000;
+    opacity: 1;
+}
+.THIS .order1{
+    position :absolute;
+    top: 176px;
+    left: 375px;
+    width: 274px;
+    height: 38px;
+    text-align: center;
+    font-weight: Bold;
+    font-size:16px;
+    font-family:'Josefin_Sans';
+    letter-spacing: 0.32px;
+    color: #000000;
+    opacity: 1;
+}
+.THIS .bar1{
+    position:absolute;
+    top: 356px;
+    left: 446px;
+    width: 58px;
+    height: 145px;
+    background: transparent linear-gradient(270deg, #FDE57B 0%, #FACC63 20%, #ED6803 100%) 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+.THIS .bar2{
+    position:absolute;
+    top: 342px;
+    left: 521px;
+    width: 58px;
+    height: 159px;
+    background: transparent linear-gradient(270deg, #FDE57B 0%, #FACC63 20%, #ED6803 100%) 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+.THIS .vbar1{
+    position:absolute;
+    top: 445px;
+    left: 681px;
+    width: 58px;
+    height: 106px;
+    background: #707070 0% 0% no-repeat padding-box;
+    opacity: 1;
+    
+}
+.THIS .vbar2{
+    position:absolute;
+    top: 413px;
+    left: 746px;
+    width: 58px;
+    height: 138px;
+    background: #F6D000 0% 0% no-repeat padding-box;
+    opacity: 1;
+    
+}
+.THIS .vbar3{
+    position:absolute;
+    top: 472px;
+    left: 830px;
+    width: 58px;
+    height: 79px;
+    background: #707070 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+.THIS .vbar4{
+    position:absolute;
+    top: 425px;
+    left: 900px;
+    width: 58px;
+    height: 126px;
+    background: #ED6803 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+.THIS .graph2{
+    position :absolute;
+    top:-50px;
+    left:-15px;
+    color: #000000;
+}
+.THIS .order3{
+    position :absolute;
+    top: 502px;
+    left: 755px;
+    width: 120px;
+    height: 12px;
+    text-align: center;
+    font-size: 12px;
+    font-family:'Josefin_Sans';
+    letter-spacing: 0.24px;
+    color: #000000;
+    opacity: 1;
+}
+.THIS .order2{
+    position :absolute;
+    top: 502px;
+    left: 458px;
+    width: 118px;
+    height: 12px;
+    text-align: left;
+    font-size: 12px;
+    font-family:'Josefin_Sans';
+    letter-spacing: 0.24px;
+    color: #000000;
+    opacity: 1;
+}
+.THIS .order4{
+    position :absolute;
+    top: 502px;
+left: 137px;
+width: 142px;
+height: 12px;
+text-align: center;
+font-size:  12px;
+    font-family:'Josefin_Sans';
+    
+letter-spacing: 0.24px;
+color: #000000;
+opacity: 1;
+}
+.THIS .piechart{
+    position :absolute;
+    top: 286px;
+left: 77px;
+width: 249px;
+height: 249px;
+
+}
+.THIS .triangle1{
+    position:absolute;
+    left: 679px;
+    top:350px;
+    border-left: 63px solid transparent;
+	border-right: 63px solid transparent;
+	border-bottom: 29px solid #F6D000;
+}
+.THIS .triangle2{
+    position:absolute;
+    left: 830px;
+    top:350px;
+    border-left: 63px solid transparent;
+	border-right: 63px solid transparent;
+	border-bottom: 29px solid #ED6803;
+
+}
+.THIS .button{
+    
+ position:absolute; 
+    bottom:-18px;
+    left:610px;
+width: 112px;
+height: 55px;
+background: #ED6803 0% 0% no-repeat padding-box;
+border: 1px solid #FDE57B;
+opacity: 1;
+    
+}

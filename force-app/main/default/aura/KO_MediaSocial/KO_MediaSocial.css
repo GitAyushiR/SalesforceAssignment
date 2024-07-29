@@ -1,0 +1,41 @@
+.THIS .media-main-section{
+    height:693px;
+    width:1024px;
+}
+.THIS .header{
+    margin-top:40px;
+    width:184px;
+}
+
+.THIS .TastingNotesText{
+    width:400px;
+    font-family: 'Josefin_Sans';
+    font-size:21px; 
+    letter-spacing: 0.42px; 
+    color: #000000; 
+}
+.THIS .border-top{
+    border-top: 4px solid #FDE57B;
+    margin-top:-4px;
+    width:170px;
+}
+.THIS .header p{
+    font-size:67px;
+    line-height:90px;
+    display:inline;
+    color:#000;
+    border-bottom: 4px solid;
+    font-family: 'GermaniaOne' ;
+    letter-spacing: 0;
+	text-align:left;
+	opacity: 1;
+    font-weight:bold;
+    border-color: #ED6803;
+    
+   
+}
+.THIS .images{
+    margin-left:22px;
+    margin-top:41px;
+    
+}

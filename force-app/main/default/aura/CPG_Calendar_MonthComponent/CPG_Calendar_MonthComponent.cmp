@@ -1,0 +1,30 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" access="global" extends="c:CPG_Calendar_GlobalHoldar">
+    
+    <aura:attribute name="monthSummary" type="Object" />
+    <aura:attribute name="selectedMonthType" type="String" />
+    
+    <div class="innerDiv" style="{! v.selectedMonthType == '12' ? 'width:60px;height:30px;' : 'width: 117px;height:44px;transform: rotate(270deg) translate(-19px,-21px);font-size:15px;text-align: left;'}">
+        <span class="months">{!v.monthSummary.prefix} </span>
+        <span style="{! v.selectedMonthType == '12' ? 'color:#333333;' : 'color:#999999;'}">{!v.monthSummary.name} </span>
+    </div>
+   
+    <div class="casesDiv" style="{! v.selectedMonthType == '12' ? 'margin-top:33px;' : 'margin-top:58px;'}">
+         <aura:iteration items="{!v.monthSummary.linkedItems}" var="element" >
+            <aura:if isTrue="{! element.noOfCalendars >0}">
+                <span style="{! 'background-color:' + element.color +';'}">{!element.noOfCalendars}</span>
+                <aura:set attribute ="else">
+                    <span class="image">
+                        <lightning:icon iconName="utility:record" 
+                                        size="x-small"
+                                        class="ring_expired"
+                                        alternativeText="Bad" />
+                   </span>
+                </aura:set>
+            </aura:if>
+        </aura:iteration>
+           </div>  
+        
+         
+        
+   
+</aura:component>

@@ -1,0 +1,36 @@
+<aura:component controller="MyAccountClass" >
+<aura:attribute name="accounts" type="Account"/>
+<aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <div class="panel">
+        <div class="slds-panel slds-size_medium slds-panel_docked slds-panel_docked-left slds-is-open" aria-hidden="false">
+        <aura:iteration items="{!v.accounts}" var="account">
+            <p class="heading"> <b>Account Details For Ayushi</b></p>
+             <div class="slds-m-left_medium">
+                <ul>
+                    <div class="slds-truncate" title="{!account.Name}">
+                        <br/><li> Name:&nbsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;{!account.Name}</li><br/></div>
+                    
+                    <div class="slds-truncate" title="{!account.AccountNumber}">
+                        <li>Account Number: &emsp; &emsp; &emsp; {!account.AccountNumber}</li><br/></div>
+                    
+                    <div class="slds-truncate" title="{!account.Site}">
+                        <li>Site:   &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;{!account.Site}</li><br/></div>
+                    
+                    <div class="slds-truncate" title="{!account.Phone}">
+                        <li>Phone: &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;{!account.Phone}</li><br/></div>
+                    
+                    <div  title="{!account.Industry}">
+                        <li>Industry:  &ensp;&emsp; &emsp; &emsp; &emsp; &emsp; &emsp;{!account.Industry}</li><br/></div>
+                    
+                        <div class="slds-truncate" title="{!account.NumberOfEmployees}">
+                        <li>Number Of Employees:  &emsp;{!account.NumberOfEmployees}</li><br/></div>
+                    
+               	    <div class="slds-truncate" title="{!account.AnnualRevenue}">
+                       <li>Annual Revenue:  &nbsp;  &emsp; &emsp; &emsp;{!account.AnnualRevenue}</li><br/></div> 
+                    </ul>
+           </div>
+    	</aura:iteration>
+	</div>
+  </div>
+    
+</aura:component>

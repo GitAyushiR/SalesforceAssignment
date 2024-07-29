@@ -1,0 +1,17 @@
+<aura:component >
+  <div class="page"> 
+	<div class="slds-panel slds-size_medium slds-panel_docked slds-panel_docked-left slds-is-open" aria-hidden="false">
+        <p class="heading"> <b>My Account Status</b></p><br/>
+      <div class="slds-m-left_small">
+       <p class="block1">Active</p>
+ 	   <div class="block2">
+           <p> <b>Messages</b></p>
+       <p> Time To Change Password!</p>
+       <p class="block3">Change Password</p>
+        
+       </div> <div class="block4"></div>   
+       </div>
+         
+    </div>
+  </div> 
+</aura:component>

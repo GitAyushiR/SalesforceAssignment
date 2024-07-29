@@ -1,0 +1,13 @@
+<aura:component controller = "CaseNStatusDetails" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <aura:handler  name = "init" value = "{!this}" action = "{!c.doInit}" />
+    <aura:attribute name="oppData" type="Opportunity[]"/>
+    
+    <aura:iteration items="{!v.oppData}" var="opplist" >
+        <div key = "{!opplist.id}"></div>
+        <div>  
+        {!opplist.CaseNumber}</div>
+        <div>
+        {!opplist.Status}
+        </div>
+    </aura:iteration>
+</aura:component>

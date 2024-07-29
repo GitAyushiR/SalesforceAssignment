@@ -1,0 +1,39 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" access="global" >
+<aura:attribute name="condition" type="boolean" default="false"/>
+  <div class="page">
+      <div class="slds-gridslds-grid--vertical slds-navigation-list--vertical">
+      <div class ="header">
+          <p class="head"> <b>My Account </b></p></div>
+  		<div class="top">   
+  		<ul class="slds-navigation-list--vertical slds-has-block-links--space">
+      	<div class="slds-navigation-list--vertical__action slds-text-link--reset" >
+        <li>Add Account</li></div>
+      	<div class="slds-navigation-list--vertical__action slds-text-link--reset">
+         <li onclick="{!c.myAction}" >Account Details</li></div>
+      	 <div class="slds-navigation-list--vertical__action slds-text-link--reset">
+          <li>Recharge</li></div>
+      	<div class="slds-navigation-list--vertical__action slds-text-link--reset" >
+         <li>Transaction History</li></div>
+      	</ul></div>
+       <div class="middle">
+       <ul class="slds-navigation-list--vertical slds-has-block-links--space">
+      <div class="slds-navigation-list--vertical__action slds-text-link--reset" >
+          <li>Auto Recharge</li></div>
+      <div class="slds-navigation-list--vertical__action slds-text-link--reset" >
+          <li>Update Account Information</li></div>
+           </ul></div>
+       <div class="bottom">
+       <ul class="slds-navigation-list--vertical slds-has-block-links--space">
+      <div class="slds-navigation-list--vertical__action slds-text-link--reset" >
+          <li>Alert Preference</li></div>
+           </ul></div>
+  
+</div>
+    </div>
+
+    <aura:if isTrue="{!v.condition}">
+        <p><c:MyAccountDetails/></p>
+        <p><c:weatherComponent/></p>
+        <p><c:AccountStatus/></p>
+    </aura:if>
+</aura:component>

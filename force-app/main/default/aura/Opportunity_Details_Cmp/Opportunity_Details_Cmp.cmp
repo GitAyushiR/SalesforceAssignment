@@ -1,0 +1,14 @@
+<aura:component implements="flexipage:availableForAllPageTypes,forceCommunity:availableForAllPageTypes" access="global" controller ="OppDetails_Stage" >
+    <!--NewClass -->
+     <aura:attribute name="OppValues" type="object" /> 
+    <div class="slds-m-around_xx-large">
+        <lightning:button label="Stage N Opprotunities" onclick="{!c.getOpportunityList}"/>
+            <aura:iteration items="{!v.OppValues}"  var="mapKey" indexVar="key">  
+                <p><b>{!mapKey.key}</b></p>
+                <aura:iteration  items="{!mapKey.value}" var="mapValue"><p>{!mapValue}</p>
+                </aura:iteration>  
+            </aura:iteration>
+        </div>
+     
+   
+      </aura:component>

@@ -1,0 +1,241 @@
+.THIS .tootltipSpan{
+    width:100%;
+}
+.THIS .innerDiv{
+    text-align:left;
+    height: 42px;
+    width: 65px;
+    transform: rotate(270deg) translate(-17px,1px);
+    font-size: 22px;
+    color: #333333;
+    font-weight: bold;
+    font-family: 'Arial-BoldMT','Arial Bold','Arial';
+}
+.THIS .outerDiv{
+    width: 60px;
+    max-height: 550px;
+    font-family: 'ArialMT','Arial';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    color: #333333;
+    text-align: center;
+    line-height: normal;
+    position: relative;
+    border: 1px solid #cccccc;
+    margin-right: 29px;
+    background: white;
+    cursor: pointer;
+    min-height: 200px;
+}
+.THIS .outerDiv:hover {
+    background-color: rgba(103, 101, 101, 0.4);
+    border: 1px solid white;
+    
+}
+.THIS .outerDiv:hover .casesDiv span{
+    border:2px solid white;
+    padding: 8px 3px;
+    font-size:9px;
+}
+/*.THIS .outerDiv:hover .casesDiv .image{
+border:unset;
+background-color:white;
+}*/
+.THIS .outerDiv:hover .ring_expired svg{
+    margin: -3px 0 0 -3px;
+}
+.THIS .menu{
+    transition: .5s;
+    width: 158px;
+    left: -158px;
+    top: 87px;
+}
+.THIS .leftLink {
+    margin-top: 10px;
+    padding:6px 0px 0px 20px;
+    font-size: 14px;
+    height: 26px;
+    font-weight:bold;
+    color: black; 
+}
+.THIS .casesDiv{
+    margin-top: 53px;
+    padding-bottom:30px;
+}
+.THIS .casesDiv span{
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    /*color: #fff; updated*/
+    font-weight: bold;
+    border-radius: 50%;
+    padding: 10px 3px;
+    display: inline-block;
+    margin: 0 auto;
+    margin-bottom: 6px;
+    font-size: 10px;
+}
+.THIS .bgcolorfbeed3{
+    background-color:#fbeed3;
+}
+.THIS .bgcolore7ebd8{
+    background-color:#e7ebd8;
+}
+.THIS .bgcolorcedae1{
+    background-color:#cedae1;
+}
+.THIS .bgcolore4d0d8{
+    background-color:#e4d0d8;
+}
+.THIS .bgcolorbebebe{
+    background-color:#bebebe;
+}
+.THIS .bgcolordddddd{
+    background-color:#dddddd;
+}
+.THIS .bgcolordaeaeb{
+    background-color:#daeaeb;
+}
+.THIS .bgcolora3cdd0{
+    background-color:#a3cdd0;
+}
+.THIS .bgcolordbcaac{
+    background-color:#dbcaac;
+}
+.THIS .month-expand-view{
+    display:none;
+}
+.THIS .month-expand .month-expand-view{
+    display:block;
+}
+.THIS .month-expand .casesDiv{
+    display:none;
+}
+.THIS .customPadding{
+    padding-top:0px;
+}
+.THIS .national [data-tooltip] {
+    display: inline-block;
+    position: relative;
+}
+/* Tooltip styling */
+.THIS .national [data-tooltip]:before {
+    content: attr(data-tooltip);
+    display: none;
+    position: absolute;
+    background: #fff;
+    color: #000;
+    font-size:12px;
+    padding: 4px 8px;
+    min-width:400px;
+    border:1px solid #c7a0b0;
+    text-align: center;
+    border-radius: 4px;
+}
+/* Dynamic horizontal centering */
+.THIS .national [data-tooltip-position="right"]:before,
+.THIS .national [data-tooltip-position="left"]:before {
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+/* Dynamic vertical centering */
+
+
+.THIS .national [data-tooltip-position="right"]:before {
+    left: 100%;
+    margin-left: 6px;
+}
+
+
+/* Tooltip arrow styling/placement */
+.THIS .national [data-tooltip]:after {
+    content: '';
+    display: none;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+}
+/* Dynamic horizontal centering for the tooltip */
+.THIS .national [data-tooltip-position="right"]:after,
+.THIS .national [data-tooltip-position="left"]:after {
+    top: 50%;
+    margin-top: -6px;
+}
+/* Dynamic vertical centering for the tooltip */
+
+.THIS .national [data-tooltip-position="right"]:after {
+    left: 100%;
+    border-width: 6px 6px 6px 0;
+    border-right-color: #fff;
+}
+
+/* Show the tooltip when hovering */
+.THIS .national [data-tooltip]:hover:before,
+.THIS .national [data-tooltip]:hover:after {
+    display: block;
+    z-index: 50;
+}
+@media screen and (max-width: 1024px){
+    .THIS .outerDiv{
+        margin-right: 6px;
+    }
+}
+@media screen and (min-width: 1200px) and (max-width: 1350px){
+    .THIS .outerDiv{
+        margin-right: 21.5px;
+    }
+}
+@media screen and (min-width: 1025px) and (max-width:1199px){
+    .THIS .outerDiv{
+        /*margin-right: 13.5px;*/
+        margin-right: 10px;
+    } 
+}
+@media screen and (min-width: 1440px){
+    .THIS .outerDiv{
+        margin-right:34px;
+    }
+    .THIS .month-expand-view{
+        left:-17%;
+    }
+}
+
+@media screen and (max-width:1023px){
+    .THIS .calendarDiv{
+        width:100%;
+    }
+    .THIS .outerDiv{
+        width: 95%;
+        height: unset;
+        max-height: unset;
+        min-height: unset;
+        margin-bottom: 10px !important;
+        margin: 0 auto;
+    }
+    .THIS .casesDiv{
+        padding: 10px 10px 5px 10px;
+        margin-top: 0!important;
+        display: flex;
+        justify-content: space-between;
+    }
+    .THIS .innerDiv{
+        height: unset!important;
+        width: unset!important;
+        transform: unset!important;
+        padding-top: 5px;
+        font-size:14px;
+        font-family:'Verdana';
+        color:#333;
+        font-weight:normal;
+    }
+    .THIS .casesDiv span{
+       /* margin-right: 5px;*/
+    }
+   
+}

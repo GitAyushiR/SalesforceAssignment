@@ -1,0 +1,84 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" access="global" >
+	<aura:attribute name="condition" type="boolean" default="false"/>
+    <aura:attribute name="condition1" type="boolean" default="false"/>
+    <div class="slds-m-around--medium">
+ 
+   <div class="slds-tabs--scoped">
+      <ul class="slds-tabs--scoped__nav" role="tablist">
+         <li aura:id="fruitId" class="slds-tabs--scoped__item slds-text-title--caps slds-active customClassForTab" title="Fruits Name" role="presentation" ><a class="slds-tabs--scoped__link" href="javascript:void(0);" onclick="{!c.fruitsTab}" role="tab" tabindex="0" aria-selected="false" aria-controls="tab-default-1" id="Fruits_linking">Fruits Name</a></li>
+         <li aura:id="VegeId" class="slds-tabs--scoped__item slds-text-title--caps customClassForTab" title="Vegetables Name" role="presentation"><a class="slds-tabs--scoped__link" href="javascript:void(0);" onclick="{!c.vegeTab}" role="tab" tabindex="-1" aria-selected="true" aria-controls="tab-default-2" id="vegetable_linking">Vegetables Name</a></li>
+         <li aura:id="ColorId" class="slds-tabs--scoped__item slds-text-title--caps customClassForTab" title="Color Name" role="presentation"><a class="slds-tabs--scoped__link" href="javascript:void(0);" onclick="{!c.colorTab}" role="tab" tabindex="-1" aria-selected="false" aria-controls="tab-default-3" id="color_linking">Color Name</a></li>
+          <li><lightning:buttonIcon class="sidemenu slds-is-absolute sidemenu-small-container slds-p-right_x-small" iconName="utility:threedots_vertical" variant="bare" size="large" onclick="{! c.ClickSmallMenu }" title="" alternativeText="" />
+
+          </li>
+       </ul>
+      <div name="tabdataName" aura:id="fruTabDataId" id="tab-default-1" class="slds-tabs--scoped__content slds-show customClassForTabData" role="tabpanel" aria-labelledby="Fruits_linking">
+          
+      </div>
+      <div name="tabdataName" aura:id="vegeTabDataId" id="tab-default-2" class="slds-tabs--scoped__content slds-hide customClassForTabData" role="tabpanel" aria-labelledby="vegetable_linking">
+          <c:KO_HeritagePage/>
+      </div>
+      <div name="tabdataName" aura:id="ColorTabDataId" id="tab-default-3" class="slds-tabs--scoped__content slds-hide customClassForTabData" role="tabpanel" aria-labelledby="color_linking">
+         <ul>
+            <li>Red</li>
+            <li>Green</li>
+            <li>Blue</li>
+         </ul>
+      </div>
+   
+               <div class="small-screen-menu slds-is-relative smallmenu1 ">
+
+                           
+                        
+                        <div aura:id="smallsidemenu" class="slds-hide flip slds-dropdown slds-dropdown_right sidemenu-dropdown slds-size_1-of-3 slds-medium-size_4-of-12 slds-large-size_3-of-12 slds-p-top_medium smallmenu">
+ 
+                            <div class="brandImage">
+                                <img src="{!$Resource.KO_LOGO}" class="slds-p-vertical_small"  />
+                            </div>
+                            <ul class="slds-dropdown__list listBgColor" role="menu" >
+                                
+                                <li class="{!v.activePage == 'HerAndAcc' ? 'slds-dropdown__item active' : 'slds-dropdown__item '}"  onclick="{!c.HeritagePage}" data-tabname="HerAndAcc"  data-index="1" style=" border-top: 2px solid ;border-bottom: 2px solid; border-color: #FDE57B ">
+                                    <a><p>HERITAGE &amp; ACCOLADES</p></a>
+                                </li>
+                                
+                                <li class="{!v.activePage == 'Category' ? 'slds-dropdown__item active' : 'slds-dropdown__item '}"  onclick="{!c.CategoryPage}" data-tabname="Category"  data-index="2" style="border-bottom: 2px solid; border-color: #FDE57B ">
+                                    <a ><p>CATEGORY &amp; BRAND INSIGHTS</p></a>
+                                </li>
+                                
+                                        <li class="{!v.activePage == 'KeyBenefit' ? 'slds-dropdown__item active' : 'slds-dropdown__item '}"  onclick="{!c.keybenefits}" data-tabname="KeyBenefits"  data-index="3" style="border-bottom: 2px solid; border-color: #FDE57B ">
+                                            <a><p>KEY BENEFITS</p></a>
+                                        </li>
+                                
+                                        <li class="{!v.activePage == 'TastingNotes' ? 'slds-dropdown__item active' : 'slds-dropdown__item '}"  onclick="{!c.tastingnotes}" data-tabname="TastingNotes"  data-index="4" style="border-bottom: 2px solid; border-color: #FDE57B ">
+                                            <a ><p >TASTING NOTES</p></a>
+                                        </li>
+                                
+                                        <li class="{!v.activePage == 'SignatureServe' ? 'slds-dropdown__item active' : 'slds-dropdown__item'}"  onclick="{!c.signatureserve}" data-tabname="SignatureServe"  data-index="5" style="border-bottom: 2px solid; border-color: #FDE57B ">
+                                            <a><p>SIGNATURE SERVE</p></a>
+                                        </li>
+                                        
+                                        <li class="{!v.activePage == 'Media' ? 'slds-dropdown__item active' : 'slds-dropdown__item'}"  onclick="{!c.media}" data-tabname="Media"  data-index="6" style="border-bottom: 2px solid; border-color: #FDE57B ">
+                                            <a><p>MEDIA</p></a>
+                                        </li>
+                                        <li class="{!v.activePage == 'LocalInput' ? 'slds-dropdown__item active' : 'slds-dropdown__item'}"  onclick="{!c.localinput}" data-tabname="LocalInput"  data-index="7" style="border-bottom: 2px solid; border-color: #FDE57B ">
+                                           <a><p>LOCAL INPUT</p></a>
+                                        </li>
+                             </ul>
+                        </div>
+                
+                
+                </div>
+                
+</div>
+ 
+ </div>
+            
+    <aura:if isTrue="{!v.condition}">
+        <p><c:KO_HeritagePage/></p>
+        
+    </aura:if>
+    <aura:if isTrue="{!v.condition1}">
+        <p><c:KO_KeyBenefits/></p>
+        
+    </aura:if>
+</aura:component>

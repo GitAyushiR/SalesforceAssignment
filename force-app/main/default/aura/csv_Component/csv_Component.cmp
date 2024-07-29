@@ -1,0 +1,65 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" controller="csvImportExport" access="global" >         
+    <aura:attribute name="ShowModule" type="boolean" default="false"/>
+    <aura:attribute name="showcard" type="boolean" default="false"/>
+    <aura:attribute name="Header" type="List"/>
+    <aura:attribute name="Data" type="List"/>
+    <aura:attribute name="start" type="integer" default="0"/>
+    <aura:attribute name="end" type="integer" />
+    <aura:attribute name="Total_Records" type="integer"/>
+    <aura:attribute name="Error_Records" type="integer"/>
+    <aura:attribute name="Success_Records" type="integer"/>
+    <aura:attribute name="ListofAccName" type="List"/>
+    <!--   <aura:handler name="init" value="{!this}" action="{!c.loadAccountList}"/>-->
+    <aura:attribute name="ListOfAccount" type="Account[]"/> 
+    <div class="slds-var-p-around_medium">
+    <div class="slds-var-p-around_medium" style="border-top: 3px solid blue;background-color:#f0edeb;">
+        
+        <input type="file" class="file" aura:id="file" accept=".csv" onchange="{!c.showfiledata}"/>
+        <lightning:button label="Validate" onclick="{!c.onsave}" variant="brand"/>
+        <lightning:button label="Export to CSV" onclick="{!c.downloadCsv}" variant="brand"/>
+       
+    </div>
+    <br></br>
+    <aura:if isTrue = "{!v.showcard}">
+        <div style="border-top: 3px solid blue;background-color:#f0edeb;">
+           
+            <div class="slds-grid slds-gutters slds-var-p-around_medium">
+                <div class="slds-col" style="font-size : 16px">
+                    <span>Total Records : {!v.Total_Records}</span>
+                </div>
+                <div class="slds-col" style="font-size : 16px">
+                    <span>Success : {!v.Success_Records}</span>
+                </div>
+                <div class="slds-col" style="font-size : 16px">
+                    <span>Error : {!v.Error_Records}</span>
+                </div>
+            </div>        
+        </div>
+        
+        <br></br>
+        <div style="border-top: 3px solid blue">
+            <table  id="data" class="slds-table slds-table_cell-buffer slds-table_bordered slds-table_col-bordered">
+                <thead style="">
+                    <tr class="slds-text-title_caps slds-text-title--bold">
+                        <aura:iteration items="{!v.Header}" var="body">
+                            <th scope="col"><div class="slds-truncate slds-text-align_center slds-text-heading_small  ">{!body}</div></th>  
+                        </aura:iteration>
+                    </tr>
+                </thead>
+                <tbody>
+                    <aura:iteration  items="{!v.Data}" var="show">
+                        <tr>
+                            <aura:iteration items="{!show}" var="item">
+                                <td ><div class="slds-truncate slds-text-align_center">{!item}</div></td>
+                            </aura:iteration>
+                        </tr>
+                    </aura:iteration>
+                </tbody>
+            </table>  
+        </div>
+        
+        
+    </aura:if>
+    
+    </div>
+</aura:component>

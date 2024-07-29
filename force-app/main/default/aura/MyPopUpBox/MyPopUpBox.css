@@ -1,0 +1,14 @@
+.THIS.ModalPopUp
+{
+    position:relative;
+    right:50px;
+    width:100px;
+    height:100px;
+}
+.THIS .slds-modal__container
+{
+ min-width: 18vw!important;
+ width:70px!important;
+ margin-right:50px;
+ margin-top:-105px;
+}

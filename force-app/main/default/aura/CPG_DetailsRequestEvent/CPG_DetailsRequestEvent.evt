@@ -1,0 +1,4 @@
+<aura:event type="COMPONENT">
+    <aura:attribute name="selectedMonth" type="String"/>
+    <aura:attribute name="isDetailsCmpActive" type="Boolean"/>
+</aura:event>

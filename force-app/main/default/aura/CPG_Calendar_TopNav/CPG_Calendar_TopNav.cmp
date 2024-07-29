@@ -1,0 +1,56 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" access="global" extends="c:CPG_Calendar_GlobalHoldar">
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    <aura:registerEvent name="topNavChangeEvent" type="c:CPG_Calendar_TopNavEvent"/>
+    
+    <aura:attribute name="selectedYear" type="String" />
+    <aura:attribute name="isPreviousIconAvailable" type="Boolean" default="true" />
+    <aura:attribute name="isNextIconAvailable" type="Boolean"  default="true"/>
+    <aura:attribute name="isDetailsCmpActive" type="Boolean" default="false"/>
+    <aura:attribute name="selectedMonthType" type="String" />
+ 
+    <div>
+        <div class="slds-col slds-size_1-of-1 slds-medium-size_12-of-12 slds-large-size_12-of-12  slds-p-horizontal_medium breadcrumbHolder slds-show_large">
+            <nav role="navigation" aria-label="Breadcrumbs">
+                <ol class="slds-breadcrumb slds-list_horizontal slds-wrap smallmar font14">
+                    <li class="breadcrumb__item "><a onclick="{!c.navigateToHomePage}">Home</a></li>
+                    <li class="breadcrumb__item right_navigation_white active">One Calendar</li>
+                </ol>
+            </nav>
+        </div>
+        
+        <div class="slds-grid slds-wrap slds-show_large">
+            <div class="slds-col slds-size_1-of-1 HeadingText">
+                <span class="color333333 font36 arial">One Calendar-Summary View</span>
+            </div>
+        </div>
+    <div class="slds-grid slds-wrap slds-m-vertical_small">
+            <div class="slds-col slds-large-size_2-of-12 slds-size_1-of-12">
+            </div>
+            <div class="slds-col slds-large-size_10-of-12 slds-size_11-of-12 marginLeft">
+                <div class="slds-grid slds-wrap">
+                    <div class="slds-col slds-large-size_9-of-12 slds-size_7-of-12 slds-medium-size_8-of-12 arial color333333 fontBold topAlign btnLeft">
+                        <aura:if isTrue="{!v.isPreviousIconAvailable == true}">
+                            <button class="left_navigation_gray slds-button slds-button_icon slds-input__icon arrow-icons Arrow" title="Previous" onclick = "{!c.onClickOfPreviousYear}">
+                            </button>
+                        </aura:if>
+                        
+                        <span class="dateFeild"> </span>
+                        
+                        <aura:if isTrue="{!v.isNextIconAvailable == true}">
+                            <button class="slds-button slds-button_icon slds-input__icon arrow-icons Arrow right_navigation_gray" title="Next" onclick ="{!c.onClickOfNextYear}">
+                            </button>
+                        </aura:if>
+                        
+                    </div>
+                    <div class="slds-col slds-large-size_3-of-12 slds-medium-size_4-of-12 slds-size_5-of-12 slds-text-align--right leftAlign btnRight" id="btnGroup">
+                       
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</aura:component>

@@ -1,0 +1,6 @@
+<aura:event type="COMPONENT" >
+    <!-- Aura Attributes Value Passes -->
+    <aura:attribute name="parameter" type="String"/>
+    <aura:attribute name="type" type="String"/>
+    <aura:attribute name="value" type="String"/>
+</aura:event>

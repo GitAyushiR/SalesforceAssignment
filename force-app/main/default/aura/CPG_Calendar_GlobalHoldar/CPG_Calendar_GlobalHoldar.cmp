@@ -1,0 +1,5 @@
+<aura:component extensible="true" >
+    <div>       
+        <div class="customPadding" >{!v.body}</div>
+    </div>
+</aura:component>

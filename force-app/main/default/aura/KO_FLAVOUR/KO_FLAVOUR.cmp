@@ -1,0 +1,52 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" access="global" >
+
+    
+  <div class="page">
+       <div class="slds-grid slds-wrap home-main-section animated-container">
+            <div class="slds-col slds-size_1-of-1 slds-medium-size_12-of-12 slds-large-size_12-of-12 main-container">
+                <div class="slds-grid slds-wrap">
+                    
+                    <div class="slds-col slds-size_1-of-1 slds-small-size_1-of-1 slds-medium-size_6-of-12 slds-large-size_6-of-12 slds-small-order--1 slds-medium-order--2 slds-large-order--2 secondDiv">
+                        <div class="rightText">
+                            
+                                <div class="header-cont"><h2>
+                                    <span>
+                                        Maximize
+                                        <span> <aura:unescapedHtml value="{!v.header}"/>
+                                        <p class="paraDig slds-m-bottom_medium">
+                                        </p>
+                                        </span>
+                                     </span>
+                                    </h2>
+                                </div>
+                             <div class="border-top"></div>
+                                <p class="imgDesc ">
+                                    <aura:unescapedHtml value="{!v.description}"/> 
+                                    YOUR SUPER PREMIUM VODKA SALES WITH KETEL ONE FLAVORED VODKA<!-- <aura:unescapedHtml value="{!v.description}"/>-->
+                                </p>
+                           </div>
+                      </div>
+                    
+                    <div class="slds-col slds-size_1-of-1 slds-small-size_1-of-1 slds-medium-size_6-of-12 slds-large-size_6-of-12 slds-small-order--2 slds-medium-order--1 slds-large-order--1">
+                        <div class="Back_img">
+                        <div class="imgBg slds-is-relative">
+     						</div>
+                            <img  src="{!$Resource.KO_FLAV_2}" class="first" style="height:928px; margin-top:-53px; margin-left:40px; " />
+                                <img  src="{!$Resource.KO_FLAV_1}" class="second" style="height:1021px; margin-top:-70px; margin-left:-45px; position:relative;"/>
+                            </div>
+                    </div>
+            </div>
+                <div class="footer">
+        <div class="slds-col slds-size_1-of-1 slds-small-size_1-of-1 slds-medium-size_12-of-12 slds-large-size_12-of-12 slds-small-order--2 slds-medium-order--3 slds-large-order--3">
+                    	
+                        <div class="slds-grid slds-wrap" >
+                           <div class="slds-p-right_xx-large  slds-p-top_small" style="margin-left:895px; margin-top:-80px;">
+                            <img src="{!$Resource.KO_Arrow_Right}" />
+                        </div>
+                        </div>
+                    </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</aura:component>

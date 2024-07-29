@@ -1,0 +1,113 @@
+.THIS .height550{
+    height:550px;
+}
+.THIS .BasePage{
+    max-width:900px;
+    right:-300px;
+}
+.THIS .bgimage{
+    background-size: 100% 100%;
+    background-repeat:no-repeat;
+    background:linear-gradient(rgba(255,255,255,.9), rgba(255,255,255,.9)), 
+        url('/resource/oneCalendarBg'); 
+}
+
+.THIS  .slds-spinner_container{
+    position: fixed !important;
+}
+.THIS.spinner {
+    /*position: relative;*/
+    background-color: #16325c;
+    /*height: 80px;*/
+}
+.THIS .textOver {
+    overflow: hidden;
+text-overflow: ellipsis;
+display: -webkit-box;
+-webkit-line-clamp: 3;
+-webkit-box-orient: vertical
+}
+/*.THIS .maxWidth{
+max-width:1440px;
+margin:0 auto;
+}*/
+@media screen and (max-width: 1350px) and (min-width: 1100px){
+    /* .THIS .calendarDiv {
+    width: 80%;
+    margin-left: -65px;
+}*/
+}
+@media only screen and (max-width: 64em){
+    /*.THIS .calendarDiv {
+    width: 78%;
+    margin-left: -33px;
+}*/
+}
+.THIS #gapOverlay{
+    width: 99%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0rem;
+    left: 0;
+    background-color: #000;
+    opacity: .5;
+    z-index: 5;
+}
+
+.THIS .slds-popover_tooltip, .THIS .slds-popover--tooltip{
+    background-color:white !important;
+    border-radius: unset;
+    box-shadow: none;
+    border: 2px solid #c7a0b0 !important;
+    max-width: 350px!important;
+    min-height: 100px;
+    width: 206px!important;
+}
+
+.THIS .tipHeading{
+    font-family: 'Arial-BoldMT','Arial Bold','Arial';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 14px;
+    color: #999999;
+    text-align: center;
+    margin-top: 10px;
+}
+.THIS .slds-nubbin_top-left:before, .THIS .slds-nubbin_top-left:after, .THIS .slds-nubbin--top-left:before, .THIS .slds-nubbin--top-left:after, .THIS .slds-nubbin_top-left-corner:before, .THIS .slds-nubbin_top-left-corner:after, .THIS .slds-nubbin_right-top::before, .THIS .slds-nubbin_right-top::after, .THIS .slds-nubbin--right-top::before, .THIS .slds-nubbin--right-top::after, .THIS .slds-nubbin_right-top-corner::before, .THIS .slds-nubbin_right-top-corner::after, .THIS .slds-nubbin_left-top::before, .THIS .slds-nubbin_left-top::after, .THIS .slds-nubbin--left-top::before, .THIS .slds-nubbin--left-top::after, .THIS .slds-nubbin_left-top-corner::before, .THIS .slds-nubbin_left-top-corner::after{
+    border-left: 2px solid #c7a0b0;
+    border-top: 2px solid #c7a0b0;
+    background: #fff;
+}
+.THIS .slds-nubbin_top-right:before, .THIS .slds-nubbin_top-right:after, .THIS .slds-nubbin--top-right:before, .THIS .slds-nubbin--top-right:after, .THIS .slds-nubbin_top-right-corner:before, .THIS .slds-nubbin_top-right-corner:after {
+    border-left: 2px solid #c7a0b0;
+    border-top: 2px solid #c7a0b0;  
+}
+.THIS #tooltipDate{
+    text-align: center;
+    margin-top: 10px;
+}
+@media screen and (max-width:1023px){
+    .THIS .calendarDiv{
+        width:100%;
+        height: 590px;
+        overflow:auto;
+        margin-bottom:6rem;
+    }
+    .THIS  .height550 {
+        height: unset;
+        position: absolute;
+        top: 110px; 
+    }
+}
+@media only screen and (min-width: 768px){
+    .THIS .height550 {
+        top: 56px;
+    }
+}
+
+@media only screen and (min-width:1024px) and (max-width:1100px){
+    .THIS .calendarDiv{
+        padding-left: 40px;
+    }
+}

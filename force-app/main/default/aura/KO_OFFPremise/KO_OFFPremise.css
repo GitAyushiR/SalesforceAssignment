@@ -1,0 +1,361 @@
+.THIS .media-main-section{
+    height:693px;
+    width:1024px;
+    
+}
+.THIS .header{
+    margin-top:40px;
+    width:184px;
+}
+.THIS .TastingNotesText{
+    width:380px;
+    font-family: 'Josefin_Sans';
+    font-size:21px; 
+    letter-spacing: 0.42px; 
+    color: #000000; 
+}
+.THIS .border-top{
+    border-top: 5px solid #FDE57B;
+    margin-top:-480px;
+    width: 302px;
+    margin-left: 361px;
+}
+.THIS .header p{
+    font-size:67px;
+    line-height:90px;
+    display:inline;
+    color:#000;
+    border-bottom: 4px solid;
+    font-family: 'GermaniaOne' ;
+    letter-spacing: 0;
+    text-align:left;
+    opacity: 1;
+    border-color: #ED6803; 
+    
+}
+.THIS .images{
+    margin-left:22px;
+    margin-top:41px;
+    
+}
+.THIS .TastingNotes{
+    position:relative;
+}
+.THIS .top{
+    position :absolute;
+    top: 85px;
+    color: black;
+    left: 66px;
+    width: 475px;
+    height: 151px;
+    text-align: center;
+    font-weight: Bold;
+    font-size:16px;
+    font-family:'Josefin_Sans';
+    letter-spacing: 0.32px;
+    color: #000000;
+    opacity: 1;
+}
+.THIS .middle{
+    position :absolute;
+    top: 313px;
+    left: 66px;
+    width: 377px;
+    height: 31px;
+    text-align: left;
+    font-family: 'Josefin_Sans';
+    font-size:10px;
+    letter-spacing: 0;
+    color: black;
+    opacity: 1;
+}
+.THIS .bottom{
+    position :absolute;
+    top: 320px;
+    left: 66px;
+    width: 496px;
+    height: 152px;
+    text-align: left;
+    font-size:32px ;
+    font-family:'Josefin_Sans';
+    letter-spacing: 3.2px;
+    opacity: 1;
+    color: black;
+    font-weight: bold;
+}
+.THIS .righttop{
+    position :absolute;
+    top: 70px;
+    left: 652px;
+    width: 151px;
+    height: 135px;
+    text-align: left;
+    font-weight: Bold ; 
+    font-family:'Josefin_Sans';
+    font-size:135px;
+    letter-spacing: 2.7px;
+    color: #F6D000;
+    opacity: 1;
+    
+}
+.THIS .rightmiddle{
+    position :absolute;
+    top: 235px;
+    left: 652px;
+    width: 158px;
+    height: 15px;
+    text-align: center;
+    font-size:  14px;
+    font-family: 'Josefin_Sans';
+    letter-spacing: 0.28px;
+    color: #000000;
+    opacity: 1;
+    
+}
+.THIS .rightbottom{
+    position :absolute;
+    top: 325px;
+    left: 652px;
+    width: 282px;
+    height: 135px;
+    text-align: left;
+    color: #F6D000;
+    opacity: 1;
+    font-weight: bold;
+    font-size:135px;
+    font-family:'Josefin_Sans';
+    letter-spacing: 2.7px;
+    
+}
+.THIS .header{
+    position :absolute;
+    top: 10px;
+    left: 331px;
+    width: 362px;
+    height: 93px;
+    text-align: center;
+    letter-spacing: 0;
+    color: #000000;
+    opacity: 1;
+} 
+.THIS .source{
+    position :absolute;
+    top: 650px;
+    left: 317px;
+    width: 390px;
+    height: 11px;
+    text-align: center;
+    font-family: 'Josefin_Sans';
+    font-size:10px;
+    letter-spacing: 0.2px;
+    color: black;
+    opacity: 1;
+}
+
+@font-face {
+    font-family: 'GermaniaOne';
+    src: url('/resource/1566988981000/GermaniaOne'); 
+    
+}
+@font-face {
+    font-family:'Josefin_Sans' ;
+    src: url('/resource/1566989749000/Josefin_Sans');
+}
+.THIS .text1{
+    position :absolute;
+    top: 176px;
+    left: 73px;
+    width: 254px;
+    height: 38px;
+    text-align: center;
+    font-weight: Bold;
+    font-size:16px;
+    font-family:'Josefin_Sans';
+    letter-spacing: 0.32px;
+    color: #000000;
+    opacity: 1;   
+}
+.THIS .text2{
+    
+}
+.THIS .text3{
+    position :absolute;
+    top: 176px;
+    left: 687px;
+    width: 280px;
+    height: 61px;
+    font-family:'Josefin_Sans';  
+    text-align: center;
+    font-weight: Bold; 
+    font-size:16px; 
+    letter-spacing: 0.32px;
+    color: #000000;
+    opacity: 1;
+}
+.THIS .order1{
+    position :absolute;
+    top: 176px;
+    left: 375px;
+    width: 274px;
+    height: 38px;
+    text-align: center;
+    font-weight: Bold;
+    font-size:16px;
+    font-family:'Josefin_Sans';
+    letter-spacing: 0.32px;
+    color: #000000;
+    opacity: 1;
+}
+.THIS .order2{
+    position :absolute;
+    top: 388px;
+    left: 362px;
+    width: 275px;
+    height: 23px;
+    text-align: center;
+    font-size: 18px;
+    font-family:'Josefin_Sans';
+    letter-spacing: 0;
+    color: #000000;
+    opacity: 1;
+    
+}
+.THIS .order3{
+    position :absolute;
+    top: 454px;
+    left: 362px;
+    width: 275px;
+    height:  23px;
+    text-align: center;
+    font-size:18px ;
+    font-family:'Josefin_Sans';
+    letter-spacing: 0.24px;
+    color: #000000;
+    opacity: 1;
+}
+.THIS .order4{
+    position :absolute;
+    top: 494px;
+    left: 463px;
+    width: 96px;
+    height: 12px;
+    text-align: left;
+    font-size:  10px;
+    font-family:'Josefin_Sans';
+    letter-spacing: 0.24px;
+    color: #000000;
+    opacity: 1;
+}
+.THIS .order1_4{
+    position :absolute;
+    top: 320px;
+    left: 73px;
+    width: 96px;
+    height: 10px;
+    text-align: left;
+    font-size: 10px;
+    font-family:'Josefin_Sans';
+    letter-spacing: 0.24px;
+    color: #000000;
+    opacity: 1;
+}
+.THIS .img1{
+    position :absolute;
+    top: 274px;
+    left: 442px;
+    width: 141px;
+    height: 106px;
+}
+.THIS .img2{
+    position :absolute;
+    top: 434px;
+    left: 457px;
+    width: 93px;
+    height: 59px;
+}
+.THIS .bar1{
+    position :absolute;
+    top: 506px;
+left: 92px;
+width: 58px;
+height: 12px;
+background: #707070 0% 0% no-repeat padding-box;
+opacity: 1;
+}
+.THIS .bar2{
+    position :absolute;
+    top: 501px;
+left: 173px;
+width: 58px;
+height: 18px;
+background: #707070 0% 0% no-repeat padding-box;
+opacity: 1;
+}
+.THIS .bar3{
+    position :absolute;
+    top: 365px;
+left: 254px;
+width: 58px;
+height: 153px;
+background: #000000 0% 0% no-repeat padding-box;
+opacity: 1;
+}
+.THIS .graph1{
+    position :absolute;
+    top: -230px;
+    left: -73px;
+}
+.THIS .graph1 p{
+    text-align: center;
+font-size:  11px;
+    font-family:'Josefin_Sans';
+letter-spacing: 0.22px;
+color: #000000;
+opacity: 1;
+}
+.THIS .vbar1 {
+    position :absolute;
+    top: 475px;
+left: 755px;
+width: 58px;
+height: 44px;
+background: #707070 0% 0% no-repeat padding-box;
+opacity: 1;
+}
+.THIS .vbar2 {
+    position :absolute;
+    top: 384px;
+left: 839px;
+width: 58px;
+height: 135px;
+background: transparent linear-gradient(270deg, #FDE57B 0%, #FACC63 20%, #ED6803 100%) 0% 0% no-repeat padding-box;
+opacity: 1;
+}
+.THIS .graph2{
+    position :absolute;
+    top: -230px;
+    left: -680px;
+}
+.THIS .graph2 p{
+    text-align: center;
+font-size: 11px;
+        font-family:'Josefin_Sans';
+letter-spacing: 0;
+color: #000000;
+opacity: 1;
+}
+.THIS .order5{
+    position :absolute;
+    margin-top: 370px;
+    margin-left:120px;
+    width: 92px;
+    height: 12px;
+    text-align: left;
+    font-size:  10px;
+    font-family:'Josefin_Sans';
+    letter-spacing: 0.24px;
+    color: #000000;
+    opacity: 1;
+    
+     
+}

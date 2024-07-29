@@ -1,0 +1,112 @@
+.THIS.Page{
+    margin-left: 52px;
+    margin-top: 120px;
+}
+.THIS .Back_img{
+    width: 490px;
+    height: 611px;
+    background-color: #f6f6f6;
+    margin-top: 60px;
+    margin-left: 22px;
+    display:inline-flex;
+}
+.THIS .home-main-section{
+    height: 693px;
+    width: 1024px;
+    background-color:#fff;
+}
+.THIS .main-container{
+    height:693px;
+    width:1024px;
+    overflow:hidden;
+}
+.THIS .brandLogo{
+    display:none;
+}
+.THIS .imgCenter{
+    display: block;
+    margin: auto;
+    height: 928px;
+    width: 190px;
+    position: absolute;
+    top: -40px;
+    left: 40px;
+    z-index: 2;
+}
+.THIS .imgCenter1{
+    display: block;
+    margin: auto;
+    height: 1024px;
+    width: 195px;
+    position: absolute;
+    top: -59px;
+    left: 185px;
+    z-index: 0;
+}
+.THIS .imgDesc{
+    color: black;
+    text-align: left;
+    width: 449px;
+    height: 113px;
+    margin-top: 29px;
+    letter-spacing: 2.64px;
+    font-weight: Bold;
+        font-size:33px;
+    font-family:'Josefin_Sans';
+	letter-spacing: 2.64px;
+	color: #000000;
+opacity: 1;
+}
+.THIS .border-top{
+    border-top: 4px solid #FDE57B;
+    margin-top:25px;
+    width:293px;
+}
+.THIS .headerText{
+    max-width:400px;    
+}
+.THIS .header-cont span{
+    top: 297px;
+	left: 461px;
+	width: 294px;
+	height: 93px;
+	text-align: left;
+	font-size:80px;
+    font-family:'GermaniaOne';
+	letter-spacing: 0;
+	color: #000000;
+	opacity: 1;
+    border-bottom: 4px solid #ED6803; 
+}
+.THIS .header-cont{
+    max-width:286px;
+}
+.THIS  h2{
+    font-size: 78px;
+    width: unset;;
+    text-align: unset;
+    line-height: 3rem;
+    color: #000000;
+    font-family: 'GermaniaOne';
+    margin-top: 21px;
+    margin: 21px auto 0 auto;
+    margin-left: 0px;
+}
+.THIS .rightText{
+    padding-top: 190px;
+}
+.THIS .secondDiv{
+    position: absolute;
+    /* left: 69px; */
+    right: 197px;
+    z-index: 1;
+}
+@font-face {
+    font-family: 'GermaniaOne';
+    src: url('/resource/1566988981000/GermaniaOne'); 
+    
+}
+@font-face {
+    font-family:'Josefin_Sans' ;
+    src: url('/resource/1566989749000/Josefin_Sans');
+}

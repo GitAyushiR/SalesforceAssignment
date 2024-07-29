@@ -1,0 +1,93 @@
+<aura:component >
+    
+	<div class="page">
+        <div class="slds-panel slds-size_medium slds-panel_docked slds-panel_docked-left slds-is-open" aria-hidden="false">
+		<div class="firstblock">
+            <p> <b>Weather Forecast</b></p></div>
+		<div class="slds-m-left_small">
+            <div class="secondblock">
+			<p class="slds-p-horizontal_small">
+				<img src="{!$Resource.NewCmp}" height="42" width="42"/> &emsp;30℃ &emsp;  Thursday &emsp; 18/7/2019
+			</p>
+		</div>
+        
+			<div class="thirdblock">
+			<p class="slds-p-horizontal_small">
+					<img src="{!$Resource.NewCmp}" height="42" width="42"/>&emsp; 22℃  &emsp; Friday &emsp; &emsp;  19/7/2019
+                </p>
+            </div>  
+            <div class="fourthblock">
+			<p class="slds-p-horizontal_small">
+					<img src="{!$Resource.NewCmp}" height="42" width="42"/>&emsp; 28℃ &emsp;  Saturday&emsp;&nbsp;  19/7/2019
+                </p>
+            </div> 
+            
+            </div> 
+            <div class="fifthblock"></div>
+    </div>
+    </div>
+    <div class="small-screen-menu slds-is-relative">
+               <lightning:buttonIcon class="hamburger slds-is-absolute hamburger-small-container slds-p-right_x-small" iconName="utility:rows" variant="bare" size="large" onclick="{! c.handleClickSmallMenu }" title="" alternativeText="" />
+
+                           
+                        <!--Hamburger Menu-->
+                        <div aura:id="smallHamburger" class="slds-hide flip slds-dropdown slds-dropdown_right hamburger-dropdown slds-size_1-of-3 slds-medium-size_4-of-12 slds-large-size_3-of-12 slds-p-left_medium">
+                            <lightning:buttonIcon class="hamburger slds-is-absolute hamburger-small-container slds-p-right_x-small" iconName="utility:close" variant="bare" size="large" onclick="{! c.handleClickSmallMenu }" title="" alternativeText="" />
+ 
+                            <div class="brandImage">
+                                <img src="{}" class="slds-p-vertical_small"  onclick="{!c.changeTabSmall}" data-tabname="Home" data-index="0"/>
+                            </div>
+                            <ul class="slds-dropdown__list listBgColor" role="menu">
+                                
+                                <li class="{!v.activePage == 'HerAndAcc' ? 'slds-dropdown__item active' : 'slds-dropdown__item '}"  onclick="{!c.changePage}" id="tv"  data-index="1"><a><span>HERITAGE &amp; ACCOLADES</span></a></li>
+                                
+                                <li class="{!v.activePage == 'Category' ? 'slds-dropdown__item active' : 'slds-dropdown__item '}"  onclick="{!c.changePage}" id="digital"  data-index="2"><a><span>CATEGORY &amp; BRAND INSIGHTS</span></a></li>
+                                
+                                    <aura:if isTrue="{!!v.isDepletion}"><!--<aura:if isTrue="{!!or(v.isDepletion,v.isDisplay)}">-->
+                                        <li class="{!v.activePage == 'KeyBenefit' ? 'slds-dropdown__item active' : 'slds-dropdown__item '}"  onclick="{!c.changePage}" id="social" data-index="2"><a><span>KEY BENEFITS</span></a></li>
+                                
+                                        <li class="{!v.activePage == 'TastingNotes' ? 'slds-dropdown__item active' : 'slds-dropdown__item '}"  onclick="{!c.changePage}" id="print"  data-index="4"><a><span>TASTING NOTES</span></a></li>
+                                
+                                        <li class="{!v.activePage == 'SignatureServe' ? 'slds-dropdown__item active' : 'slds-dropdown__item'}"  onclick="{!c.changePage}" id="ooh" data-index="5">
+                                            <a><span>SIGNATURE SERVE</span></a>
+                                        </li>
+                                        
+                                        <li class="{!v.activePage == 'Media' ? 'slds-dropdown__item active' : 'slds-dropdown__item'}"  onclick="{!c.changeTabSmall}" id="Media"  data-index="6">
+                                            <a><span>MEDIA</span></a>
+                                        </li>
+                                        <li class="{!v.activePage == 'LocalInput' ? 'slds-dropdown__item active' : 'slds-dropdown__item'}"  onclick="{!c.changeTabSmall}" id="LocalInput"  data-index="7">
+                                           <a><span>LOCALINPUT</span></a>
+                                        </li>
+                                        <aura:set attribute="else">
+                                            <li class="{!v.activePage == 'TastingNotes' ? 'slds-dropdown__item active' : 'slds-dropdown__item'}"  onclick="{!c.changeTabSmall}" id="TastingNotes"  data-index="3">
+                                                <a><span>TASTING NOTES</span></a>
+                                            </li>
+                                            <li class="{!v.activePage == 'SignatureServe' ? 'slds-dropdown__item active' : 'slds-dropdown__item'}"  onclick="{!c.changeTabSmall}" id="SignatureServe"  data-index="4">
+                                                <a><span>SIGNATURE SERVE</span></a>
+                                            </li>
+                                            
+                                            <li class="{!v.activePage == 'Media' ? 'slds-dropdown__item active' : 'slds-dropdown__item'}"  onclick="{!c.changeTabSmall}" id="Media"  data-index="5">
+                                                <a><span>MEDIA</span>
+                                                    </a>
+                                            </li>
+                                            <li class="{!v.activePage == 'LocalInput' ? 'slds-dropdown__item active' : 'slds-dropdown__item'}"   onclick="{!c.changeTabSmall}" data-tabname="LocalInput"  data-index="6">
+                                                 <a> 
+                                                     <span>LOCAL INPUT</span>
+                                                    </a>
+                                                
+                                            </li>
+                                        </aura:set>
+                                    </aura:if>
+                                
+                                
+                            </ul>
+                        </div>
+                
+                
+                </div>
+    
+    
+
+             
+            
+</aura:component>

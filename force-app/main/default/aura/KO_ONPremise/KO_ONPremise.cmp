@@ -1,0 +1,110 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" access="global" >
+    <div >
+        <div class="slds-grid slds-wrap media-main-section animated-container slds-is-relative">
+            <div class="slds-col slds-size_1-of-1 slds-medium-size_12-of-12 slds-large-size_12-of-12  ">
+                <div class="slds-grid slds-wrap">
+                    <div class="slds-col slds-size_1-of-1  images">
+                        <img src="{!$Resource.KO_OFFpremise1}" style="position:absolute;  "/>
+                        <img src="{!$Resource.KO_OFFpremise2}" style="position:relative; "/>
+                    </div>
+                    <div class="header"  >
+                        <p class="heading"  >On Premise</p>
+                    </div>
+                    <div class="border-top"></div>
+                    <div class="slds-col slds-size_1-of-1 slds-small-size_1-of-1 slds-medium-size_4-of-12 slds-small-order--1 slds-medium-order--1 slds-large-order--1 text1 ">
+                        <div class="slds-grid slds-wrap">
+                            <p class=" slds-m-top_xx-large order5 ">
+                                Premium Is the LARGEST Share of Vodka and GROWING
+                            </p>
+                           <img src="{!$Resource.OnPremise}" class="  piechart" />
+                            <p class=" slds-m-top_xx-large order4">Volume Share of Vodka
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="slds-col slds-size_1-of-1 slds-small-size_1-of-1 slds-medium-size_4-of-12 slds-small-order--1 slds-medium-order--1 slds-large-order--2 text2 ">
+                        <div class="slds-grid slds-wrap">
+                            <p class=" slds-m-top_xx-large order1">
+                                Occasions with Flavored Vodka Serves Are GROWING
+                            </p>
+                            <div class="graph1">
+                                <div class="bar1">
+                                    <p style="font-weight: Bold;font-size:18px;font-family:'Josefin_Sans';letter-spacing: 0.36px;color: #000000;opacity: 1;text-align:center;  margin-top:-25px;">31%</p>
+                                    <p style="font-size: 12px;letter-spacing: 0.24px;color: #000000;opacity: 1;  margin-top:145px;">Q3 2018</p>
+                                </div>
+                                <div class="bar2">
+                                    <p style="font-weight: Bold;font-size:18px;font-family:'Josefin_Sans';letter-spacing: 0.36px;color: #000000;opacity: 1;  margin-top:-25px;text-align:center;">37%</p>
+
+                                    <p style="font-size: 12px;letter-spacing: 0.24px;color: #000000;opacity: 1; margin-top:160px;">Q3 2019</p>
+                                </div>
+                                
+                            </div>
+                            <p class=" slds-m-top_xx-large order2">
+                                Share of Occasions
+                            </p>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="slds-col slds-size_1-of-1 slds-small-size_1-of-1 slds-medium-size_4-of-12 slds-small-order--1 slds-medium-order--1 slds-large-order--3 text3 ">
+                        <div class="slds-grid slds-wrap">
+                            <p class=" slds-m-top_xx-large para1 ">
+                                Premium Ketel One Base Flavors Deliver HIGHER Profits over the Competition
+                            </p>
+                            <div class="graph2">
+                                <div class="triangle1" ><p style="font-weight:bold;font-size:20px;font-family:'Josefin_Sans';color: #F6F6F6;position:absolute;margin-left:-25px;">+11%</p></div>
+                                    <div class="vbar1">
+                                       <p style="font-weight: semibold;font-size:18px;font-family:'Josefin_Sans';color: #000000;opacity: 1;text-align:center;  margin-top:-25px;">$48.70</p>
+                                        <p style="text-align: center;font-size:  11px;font-family: 'Josefin_Sans';letter-spacing: 0.22px;color: #000000;opacity: 1;margin-top:110px;" >Absolut Citron</p>
+                                    </div>
+                                    <div class="vbar2">
+                                        <p style="font-weight: semibold;font-size:18px;font-family:'Josefin_Sans';color: #000000;opacity: 1;text-align:center;  margin-top:-25px;">$54.17</p>
+                                        <p style="text-align: center;font-size:  11px;font-family: 'Josefin_Sans';letter-spacing: 0.22px;color: #000000;opacity: 1; margin-top:145px;" >Ketel One Citroen</p>
+                                    </div>
+                                
+                                <div class="triangle2"><p style="font-weight:bold;font-size:20px;font-family:'Josefin_Sans';color: #F6F6F6;position:absolute;margin-left:-28px;">+26%</p></div>
+                                    <div class="vbar3">
+                                        <p style="font-weight: semibold;font-size:18px;font-family:'Josefin_Sans';color: #000000;opacity: 1;text-align:center;  margin-top:-25px;">$35.45</p>
+                                        <p style="text-align: center;font-size:  11px;font-family: 'Josefin_Sans';letter-spacing: 0.22px;color: #000000;opacity: 1; margin-top:85px;" >Absolut Mandarin</p>
+                                    </div>
+                                    <div class="vbar4">
+                                        <p style="font-weight: semibold;font-size:18px;font-family:'Josefin_Sans';color: #000000;opacity: 1;text-align:center;  margin-top:-25px;">$47.02</p>
+                                        <p style="text-align: center;font-size:  11px;font-family: 'Josefin_Sans';letter-spacing: 0.22px;color: #000000;opacity: 1; margin-top:130px;" >Ketel One Oranje</p>
+                                    </div>
+                                
+                            </div>
+                            <p class=" slds-m-top_xx-large order3 ">Average Check Value</p>
+                            
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                
+                
+                <div class="slds-col slds-size_1-of-1 slds-large-order--3">
+                    
+                    <div class="slds-grid slds-wrap" >
+                        <div class="slds-p-left_large slds-p-top_small">
+                            <img src="{!$Resource.KO_Arrow_Left}" />
+                            
+                            
+                            <div class="source">
+                                <p>Sources: 1 — Nielsen CGA On Premise Volume, 52 Weeks Ending April 20, 2019, 2 — Nielsen Total US XAOC Plus Liquor Census, 52 Weeks Ending May 18, 2019, 3 — Nielsen CGA CLIP On Premise Data, 12 Weeks Ending March 30, 2019
+                                <lightning:button aura:id="button" label="OFF PREMISE" class="button" variant="inverse"  onclick="{! c.handleClick }"/> 
+                                </p> 
+                            </div>
+                         
+                        </div>
+                       
+                        <div class="slds-p-right_large slds-p-top_small" style="margin-left:865px;">
+                            <img src="{!$Resource.KO_Arrow_Right}" />
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+</aura:component>

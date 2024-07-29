@@ -1,0 +1,42 @@
+<aura:component controller="MyAccountClass" implements="forceCommunity:availableForAllPageTypes" access="global" >
+    <aura:attribute name="accounts" type="List" />
+    <aura:attribute name="condition" type="Boolean" default="false"/>
+	<aura:handler name="init" value="{!this}" action="{!c.doInit}" /> 
+    <aura:handler name="cmpEvent" action="{!c.ApplyFilter}" event="c:ComponentEvent"/>
+    <aura:handler name="cancelEvent" action="{!c.Cancel}" event="c:ComponentEvent"/>
+     <!-- Use a data table from the Lightning Design System: https://www.lightningdesignsystem.com/components/data-tables/ -->
+    <table class="slds-table slds-table_bordered slds-table_striped slds-table_cell-buffer slds-table_fixed-layout">
+         <thead>
+           <tr class="slds-text-heading_label">
+             <!-- Fields - ID, Name , Phone , Owner Id , Account Number -->
+		 	 <th scope="col"><div class="slds-truncate" title="ID">ID</div></th> 
+             <th scope="col"><div class="slds-truncate" title="Name">Name</div></th>
+             <th scope="col"><div class="slds-truncate" title="Phone">Phone</div></th>
+             <th scope="col"><div class="slds-truncate" title="OwnerId">OwnerId</div></th> 
+             <th scope="col"><div class="slds-truncate" title="Account Number">Account Number</div></th>
+             <!-- Apply Filter Button -->
+             <th scope="col">
+                 <div class="slds-truncate" title="Apply Filter">
+                 	<lightning:button label="Apply Filter" onclick="{!c.myAction}" aura:id="EnableButton"> </lightning:button>
+                 </div>
+             </th>
+           </tr>
+         </thead>
+         <tbody>
+            <!-- Use the Apex model and controller to fetch server side data -->
+           <aura:iteration items="{!v.accounts}" var="account">
+               <tr>
+                   <td ><div class="slds-truncate" title="{!account.Id}">{!account.Id}</div></td> 
+                   <td><div class="slds-truncate" title="{!account.Name}">{!account.Name}</div></td>
+                   <td><div class="slds-truncate" title="{!account.Phone}">{!account.Phone}</div></td>
+                   <td><div class="slds-truncate" title="{!account.OwnerId}">{!account.OwnerId}</div></td>
+                   <td><div class="slds-truncate" title="{!account.AccountNumber}">{!account.AccountNumber}</div></td>
+               </tr>
+           </aura:iteration>
+         </tbody>
+    </table>
+    <!-- Connects to next components when button is hit -->
+    <aura:if isTrue="{!v.condition}" >
+        <c:MyPopUpBox/>
+    </aura:if> 
+</aura:component>

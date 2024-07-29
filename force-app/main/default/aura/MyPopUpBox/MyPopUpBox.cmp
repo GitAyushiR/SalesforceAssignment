@@ -1,0 +1,73 @@
+<aura:component >
+    <aura:attribute name="isOpen" type="boolean" default="true"/>
+    <aura:attribute name="valueBox" type="String"/>
+    <aura:attribute name="accounts" type="List" />
+    <aura:attribute name="condition" type="Boolean" default="false"/>
+    <aura:registerEvent name="cmpEvent" type="c:ComponentEvent"/>
+    <aura:registerEvent name="cancelEvent" type="c:ComponentEvent"/>
+    
+    <div class="ModalPopUp">
+          <aura:if isTrue="{!v.isOpen}">
+          <!--Use "slds-m-around_xx-large" class to add standard X-Large padding to the component-->
+              
+    	  <div class="slds-m-around_xx-large">
+       		<form>
+            <div class="slds-modal_xx-small" style="height:100px;">
+            <!-- MODAL BOX --> 
+                
+            <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+                <div class="slds-modal__container">
+                    <!--  MODAL BOX HEADER  --> 
+                    
+                    <header class="slds-modal__header">
+                    <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">Apply Filter</h2>
+                    </header>
+                    <!--MODAL BOX BODY Part  -->
+                    
+                    <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                       <!-- picklist for Parameters -->
+                        
+                        <lightning:select label="Parameters" name="parameter" aura:id="parameter"  required="true">
+                            <option value=""> Choose One... </option>
+                            <option value="Name"> Name </option>
+                            <option value="Phone"> Phone </option>
+							<option value="OwnerId"> OwnerId </option>
+                            <option value="AccountNumber"> AccountNumber </option>
+                 		</lightning:select>
+                        <!-- picklist for Type -->
+                        
+                        <lightning:select label="Type" name="type" aura:id="type"  required="true">
+                         	<option value=""> Choose One... </option>
+                            <option value="Equals"> Equals </option>
+                            <option value="Contains"> Contains </option>
+                            <option value="Starts With"> Starts With </option>
+							<option value="Ends With"> Ends With </option>
+                        </lightning:select>
+                        <!--value input box -->
+                        
+                        <lightning:input name="value" placeholder="value" aura:id="value" required="true" value="{!v.valueBox}"></lightning:input>
+                        
+                  	</div>
+                        
+                     <!--MODAL BOX FOOTER Part -->
+                    
+                    <footer class="slds-modal__footer">
+                        <lightning:button variant="neutral" 
+                                          label="Cancel"
+                                          title="Cancel"
+                                          onclick="{! c.closeModel}"/>
+                        <lightning:button variant="brand" 
+                                          label="Apply Filter"
+                                          title="Apply Filter" 
+                                          onclick="{!c.Filter}"/>
+                    </footer>
+               </div>
+            </section>
+            </div>
+            <div class="slds-backdrop slds-backdrop_open"></div>
+           </form>
+        </div>
+        </aura:if>
+    </div>
+    
+</aura:component>

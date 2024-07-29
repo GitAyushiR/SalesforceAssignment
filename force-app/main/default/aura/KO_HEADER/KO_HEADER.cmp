@@ -1,0 +1,208 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" access="global" >
+<!--<aura:attribute name="iconName" type="string" default="threedots"/>
+    <aura:attribute name="activePage" type="string" default="Home"/>
+    <aura:attribute name="slideIndex" type="Integer" default="0"/> 
+    <aura:attribute name="accountId" type="string" default=""/>
+    <aura:attribute name="logoImageID" type="string" />
+    <aura:attribute name="hamburgerImageID" type="string"/>
+    <aura:attribute name="brandVariantID" type="string" />
+    <aura:attribute name="brandStandardID" type="string" default=""/>
+    <aura:attribute name="channelType" type="string" default=""/> 
+    <aura:attribute name="isDepletion" type="Boolean" default="true"/>
+    <aura:attribute name="prefixURL" type="string" default="{}"/>
+    <aura:attribute name="isDisplay" type="Boolean" default="true"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>-->
+    
+    <div>
+        <div class="slds-grid slds-wrap header-wrapper bgcolor-ffffff josefinSans-font"> 
+            <div class="slds-col slds-size_1-of-1 slds-medium-size_12-of-12 slds-large-size_12-of-12">
+                <div  aura:id="menulist" class="slds-grid slds-wrap slds-is-relative large-screen-menu">
+                    <div class="brandLogo slds-col slds-size_3-of-12 slds-medium-size_3-of-12 slds-large-size_3-of-12">
+                        <img src="{}" class="baileys-logo" onclick="{!c.changeTab}" data-tabname="Home" data-index="0"/>
+                    </div>
+                    <div class="slds-dropdown-trigger slds-dropdown-trigger--click header slds-col slds-size_9-of-12 slds-medium-size_9-of-12 slds-large-size_9-of-12 slds-align_absolute-center" >
+                        <nav class="navbar navbar-expand-lg slds-grid slds-wrap slds-size_1-of-1 josefinSans-font"> 
+                            <nav class="slds-float_left" role="navigation">
+                                <ul class="slds-grid slds-size_1-of-1 nav_menu">
+                                    <li class="{!v.activePage == 'HerAndAcc' ? 'nav-item active' : 'nav-item '}"  onclick="{!c.changeTab}" data-tabname="HerAndAcc"  data-index="1">
+                                        <div class="nav_data">
+                                            <a aura:id="heritage" href="javascript:void(0);" class="slds-context-bar__label-action"> 
+                                                <p class="Font12 line-height-12">HERITAGE &amp; <br> </br> ACCOLADES</p>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="{!v.activePage == 'Category' ? 'nav-item  active' : 'nav-item'}" onclick="{!c.changeTab}" data-tabname="Category"  data-index="2">
+                                        <div class="nav_data">
+                                            <a aura:id="heritage" href="javascript:void(0);" class="slds-context-bar__label-action"> 
+                                                <p class="Font12 line-height-12">CATEGORY &amp; <br> </br> BRAND INSIGHTS</p>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <aura:if isTrue="{!!v.isDepletion}"><!--<aura:if isTrue="{!!or(v.isDepletion,v.isDisplay)}">-->
+                                        <li class="{!v.activePage == 'KeyBenefit' ? 'nav-item active' : 'nav-item'}"  onclick="{!c.changeTab}" data-tabname="KeyBenefit"  data-index="3">
+                                            <div class="nav_data">
+                                                <a aura:id="heritage" href="javascript:void(0);" class="slds-context-bar__label-action"> 
+                                                    <p class="Font12">KEY <br> </br> BENEFITS</p>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        
+                                        <li class="{!v.activePage == 'TastingNotes' ? 'nav-item active' : 'nav-item'}"  onclick="{!c.changeTab}" data-tabname="TastingNotes"  data-index="4">
+                                            <div class="nav_data">
+                                                <a aura:id="heritage" href="javascript:void(0);" class="slds-context-bar__label-action"> 
+                                                    <p class="Font12 line-height-12">TASTING <br> </br> NOTES</p>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li class="{!v.activePage == 'SignatureServe' ? 'nav-item active' : 'nav-item'}"  onclick="{!c.changeTab}" data-tabname="SignatureServe"  data-index="5">
+                                            <div class="nav_data">
+                                                <a aura:id="heritage" href="javascript:void(0);" class="slds-context-bar__label-action"> 
+                                                    <p class="Font12 line-height-12">SIGNATURE <br> </br>SERVE</p>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        
+                                        <li class="{!v.activePage == 'Media' ? 'nav-item active' : 'nav-item'}"  onclick="{!c.changeTab}" data-tabname="Media"  data-index="6">
+                                            <div class="nav_data slds-p-top_x-small">
+                                                <a aura:id="heritage" href="javascript:void(0);" class="slds-context-bar__label-action"> 
+                                                    <p class="Font12 line-height-12">MEDIA</p>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li class="{!v.activePage == 'LocalInput' ? 'nav-item active' : 'nav-item'}"  onclick="{!c.changeTab}" data-tabname="LocalInput"  data-index="7">
+                                            <div class="nav_data">
+                                                <a aura:id="heritage" href="javascript:void(0);" class="slds-context-bar__label-action"> 
+                                                    <p class="Font12 line-height-12">LOCAL <br> </br> INPUT</p>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <aura:set attribute="else">
+                                            <li class="{!v.activePage == 'TastingNotes' ? 'nav-item active' : 'nav-item'}"  onclick="{!c.changeTab}" data-tabname="TastingNotes"  data-index="3">
+                                                <div class="nav_data">
+                                                    <a aura:id="heritage" href="javascript:void(0);" class="slds-context-bar__label-action"> 
+                                                        <p class="Font12 line-height-12">TASTING <br> </br> NOTES</p>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="{!v.activePage == 'SignatureServe' ? 'nav-item active' : 'nav-item'}"  onclick="{!c.changeTab}" data-tabname="SignatureServe"  data-index="4">
+                                                <div class="nav_data">
+                                                    <a aura:id="heritage" href="javascript:void(0);" class="slds-context-bar__label-action"> 
+                                                        <p class="Font12 line-height-12">SIGNATURE <br> </br>SERVE</p>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            
+                                            <li class="{!v.activePage == 'Media' ? 'nav-item active' : 'nav-item'}"  onclick="{!c.changeTab}" data-tabname="Media"  data-index="5">
+                                                <div class="nav_data slds-p-top_x-small">
+                                                    <a aura:id="heritage" href="javascript:void(0);" class="slds-context-bar__label-action"> 
+                                                        <p class="Font12 line-height-12">MEDIA</p>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="{!v.activePage == 'LocalInput' ? 'nav-item active' : 'nav-item'}"  onclick="{!c.changeTab}" data-tabname="LocalInput"  data-index="6">
+                                                <div class="nav_data">
+                                                    <a aura:id="heritage" href="javascript:void(0);" class="slds-context-bar__label-action"> 
+                                                        <p class="Font12 line-height-12">LOCAL <br> </br> INPUT</p>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                        </aura:set>
+                                    </aura:if>
+                                </ul>
+                            </nav>
+                        </nav>
+                        <aura:if isTrue="{!v.iconName == 'threedots'}">
+                            <lightning:buttonIcon class="hamburger slds-is-absolute hamburger-container slds-p-right_x-small" iconName="utility:threedots_vertical" variant="bare" size="large" onclick="{! c.handleClickMenu }" title="" alternativeText="" />
+                            <aura:set attribute="else">
+                                <button class="hamburger slds-is-absolute  hamburger-cross-btn" onclick="{! c.handleClickMenu }">
+                                    <div class="cross-dots slds-is-relative color-BB9959 font-bold">
+                                        <span class="cross-dots-tl slds-is-absolute"></span>
+                                        <span class="cross-dots-tr slds-is-absolute"></span>
+                                        <span class="cross-dots-mm slds-is-absolute"></span>
+                                        <span class="cross-dots-bl slds-is-absolute"></span>
+                                        <span class="cross-dots-br slds-is-absolute"></span>
+                                    </div>
+                                </button>
+                            </aura:set>
+                        </aura:if>
+                        
+                        <!--Hamburger Menu-->
+                        <div class="flip slds-dropdown slds-dropdown_right hamburger-dropdown slds-size_1-of-3 slds-medium-size_4-of-12 slds-large-size_3-of-12 slds-p-left_medium">
+                            <div class="brandImage">
+                                <img src="{}" class="slds-p-vertical_small"/>
+                            </div>
+                            <ul class="slds-dropdown__list listBgColor" role="menu">
+                                <aura:if isTrue="{!!v.isDepletion}"><!--,v.isDisplay-->
+                                <li class="slds-dropdown__item" ><a onclick="{!c.redirectToPDF}"><span>SHARE PDF</span></a></li>
+                                </aura:if>
+                                    <li class="slds-dropdown__item" ><a onclick="{!c.handleRedirect}"><span>GOTO EDGE365</span></a></li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            <div class="small-screen-menu slds-is-relative">
+               <lightning:buttonIcon class="hamburger slds-is-absolute hamburger-small-container slds-p-right_x-small" iconName="utility:rows" variant="bare" size="large" onclick="{! c.handleClickSmallMenu }" title="" alternativeText="" />
+
+                           
+                        <!--Hamburger Menu-->
+                        <div aura:id="smallHamburger" class="slds-hide flip slds-dropdown slds-dropdown_right hamburger-dropdown slds-size_1-of-3 slds-medium-size_4-of-12 slds-large-size_3-of-12 slds-p-left_medium">
+                            <lightning:buttonIcon class="hamburger slds-is-absolute hamburger-small-container slds-p-right_x-small" iconName="utility:close" variant="bare" size="large" onclick="{! c.handleClickSmallMenu }" title="" alternativeText="" />
+ 
+                            <div class="brandImage">
+                                <img src="{}" class="slds-p-vertical_small"  onclick="{!c.changeTabSmall}" data-tabname="Home" data-index="0"/>
+                            </div>
+                            <ul class="slds-dropdown__list listBgColor" role="menu">
+                                
+                                <li class="{!v.activePage == 'HerAndAcc' ? 'slds-dropdown__item active' : 'slds-dropdown__item '}"  onclick="{!c.changeTabSmall}" data-tabname="HerAndAcc"  data-index="1"><a><span>HERITAGE &amp; ACCOLADES</span></a></li>
+                                
+                                <li class="{!v.activePage == 'Category' ? 'slds-dropdown__item active' : 'slds-dropdown__item '}"  onclick="{!c.changeTabSmall}" data-tabname="Category"  data-index="2"><a><span>CATEGORY &amp; BRAND INSIGHTS</span></a></li>
+                                
+                                    <aura:if isTrue="{!!v.isDepletion}"><!--<aura:if isTrue="{!!or(v.isDepletion,v.isDisplay)}">-->
+                                        <li class="{!v.activePage == 'KeyBenefit' ? 'slds-dropdown__item active' : 'slds-dropdown__item '}"  onclick="{!c.changeTabSmall}" data-tabname="KeyBenefit"  data-index="2"><a><span>KEY BENEFITS</span></a></li>
+                                
+                                        <li class="{!v.activePage == 'TastingNotes' ? 'slds-dropdown__item active' : 'slds-dropdown__item '}"  onclick="{!c.changeTabSmall}" data-tabname="TastingNotes"  data-index="4"><a><span>TASTING NOTES</span></a></li>
+                                
+                                        <li class="{!v.activePage == 'SignatureServe' ? 'slds-dropdown__item active' : 'slds-dropdown__item'}"  onclick="{!c.changeTabSmall}" data-tabname="SignatureServe"  data-index="5">
+                                            <a><span>SIGNATURE SERVE</span></a>
+                                        </li>
+                                        
+                                        <li class="{!v.activePage == 'Media' ? 'slds-dropdown__item active' : 'slds-dropdown__item'}"  onclick="{!c.changeTabSmall}" data-tabname="Media"  data-index="6">
+                                            <a><span>MEDIA</span></a>
+                                        </li>
+                                        <li class="{!v.activePage == 'LocalInput' ? 'slds-dropdown__item active' : 'slds-dropdown__item'}"  onclick="{!c.changeTabSmall}" data-tabname="LocalInput"  data-index="7">
+                                           <a><span>LOCALINPUT</span></a>
+                                        </li>
+                                        <aura:set attribute="else">
+                                            <li class="{!v.activePage == 'TastingNotes' ? 'slds-dropdown__item active' : 'slds-dropdown__item'}"  onclick="{!c.changeTabSmall}" data-tabname="TastingNotes"  data-index="3">
+                                                <a><span>TASTING NOTES</span></a>
+                                            </li>
+                                            <li class="{!v.activePage == 'SignatureServe' ? 'slds-dropdown__item active' : 'slds-dropdown__item'}"  onclick="{!c.changeTabSmall}" data-tabname="SignatureServe"  data-index="4">
+                                                <a><span>SIGNATURE SERVE</span></a>
+                                            </li>
+                                            
+                                            <li class="{!v.activePage == 'Media' ? 'slds-dropdown__item active' : 'slds-dropdown__item'}"  onclick="{!c.changeTabSmall}" data-tabname="Media"  data-index="5">
+                                                <a><span>MEDIA</span>
+                                                    </a>
+                                            </li>
+                                            <li class="{!v.activePage == 'LocalInput' ? 'slds-dropdown__item active' : 'slds-dropdown__item'}"   onclick="{!c.changeTabSmall}" data-tabname="LocalInput"  data-index="6">
+                                                 <a> 
+                                                     <span>LOCAL INPUT</span>
+                                                    </a>
+                                                
+                                            </li>
+                                        </aura:set>
+                                    </aura:if>
+                                <aura:if isTrue="{!!v.isDepletion}"><!--,v.isDisplay-->
+                                <li class="slds-dropdown__item" ><a onclick="{!c.redirectToPDF}"><span>SHARE PDF</span></a></li>
+                                </aura:if>
+                                    <li class="slds-dropdown__item" ><a onclick="{!c.handleRedirect}"><span>GOTO EDGE365</span></a></li>
+                                
+                            </ul>
+                        </div>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+</aura:component>

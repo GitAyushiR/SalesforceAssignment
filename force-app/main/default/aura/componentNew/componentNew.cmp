@@ -1,0 +1,23 @@
+<aura:component >
+   <aura:registerevent name="NewEvent" type="c:eventNew"/>
+   <!-- <div class="page">
+    <div class="row">
+        <h2 class="header">Basic Input Value</h2>
+        
+    </div>
+       
+        </div>-->
+     <div class="divCss">
+      <h1>Hello </h1>
+      <p>This is sample element.</p>
+        <lightning:input type="text" name="input1" label="Enter a Value" />
+     <p><lightning:button
+        label="Click here "
+        onclick="{!c.EventFire}" />
+	</p> 
+   </div>
+    
+   
+  <!--here <p> tag is top level elements-->
+    <p>This is a sample HTML paragraph.<span>with a span element</span></p>  
+</aura:component>

@@ -1,0 +1,16 @@
+.THIS .header{
+    text-align: left;
+	font-family: Josefin Sans;
+	letter-spacing: 0.24px;
+	color: #000000;
+	opacity: 1;
+    font-size: 12px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+
+}
+.THIS .header-wrapper{
+    top: 0px;
+left: 0px;
+width: 1024px;
+height: 75px;
+}

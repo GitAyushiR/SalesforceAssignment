@@ -1,0 +1,65 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" access="global" >
+	
+    <div>
+        <div class="slds-grid slds-wrap media-main-section animated-container slds-is-relative">
+            <div class="slds-col slds-size_1-of-1 slds-medium-size_12-of-12 slds-large-size_12-of-12 ">
+                <div class="slds-grid slds-wrap">
+                    <div class="slds-col slds-size_1-of-1 slds-small-size_1-of-1 slds-medium-size_5-of-12 slds-large-size_5-of-12 slds-small-order--1 slds-medium-order--2 slds-large-order--2">
+                    	<div class="slds-col slds-size_1-of-1 " style="margin-left:-50px;">
+                        	<div class="header"  >
+                                <p class="heading" >Ketel One Oranje Soda</p>
+                                
+                            </div>
+                            <div class="localinputText" style="font-family:'Josefin_Sans'; font-size:21px; letter-spacing: 0.42px; color: #000000; opacity: 1;">
+                                <p class="josefinSans-font font-16 line-height-23 slds-m-bottom_xx-small" style="font-weight:bold; letter-spacing: 2.52px;">
+                                    RECIPE:							
+                                </p>
+                                <p class="josefinSans-font font-16 line-height-23 slds-m-bottom_large">
+                                    1.5 oz. Ketel One Oranje Vodka<br/> 
+                                    3 oz. Club Soda<br/> 
+                                    1-2 Dashes Orange Bitters <br/>
+                                    2-3 Orange Wheels	
+                                </p>
+                            	<p class="josefinSans-font font-16 line-height-23 slds-m-bottom_xx-small" style="font-weight:bold; letter-spacing: 2.52px;">
+                                    PREPARATION:			
+                                </p> 
+                                <p class="josefinSans-font font-16 line-height-23 slds-m-bottom_large">
+                                    Fill a rocks glass with ice<br/>
+                                    Add Ketel One Oranje Vodka<br/>
+                                    Add 1-2 dashes orange bitters<br/>
+                                    Add club soda<br/>
+                                    Garnish with 2-3 orange wheels	
+                                </p> 
+                             </div>
+                            
+                        </div>
+                    </div>
+                                       <div class="slds-col slds-size_1-of-1 slds-small-size_1-of-1 slds-medium-size_7-of-12 slds-large-size_7-of-12 slds-small-order--3 slds-medium-order--1 slds-large-order--1">
+                    	<div class="slds-col slds-size_1-of-1 images">
+                            
+                            <div class="localInput">
+                                
+                                <img src="{!$Resource.KO_SignatureServe}"/>
+                                
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="slds-col slds-size_1-of-1 slds-small-size_1-of-1 slds-medium-size_12-of-12 slds-large-size_12-of-12 slds-small-order--2 slds-medium-order--3 slds-large-order--3">
+                    	
+                        <div class="slds-grid slds-wrap">
+                            <div class="slds-p-left_large slds-p-top_small">
+                            <img src="{!$Resource.KO_Arrow_Left}" />
+                        </div>
+                            <div class="slds-p-right_large slds-p-top_small" style="margin-left:800px;">
+                            <img src="{!$Resource.KO_Arrow_Right}" />
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</aura:component>

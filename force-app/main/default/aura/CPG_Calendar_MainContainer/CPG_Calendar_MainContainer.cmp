@@ -1,0 +1,75 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" access="global" controller="Calendar_Class">
+	
+        <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+        
+        <aura:handler name="topNavChangeEvent" event="c:CPG_Calendar_TopNavEvent" action="{!c.handleTopNavChange}"/>
+      
+        <aura:attribute name="selectedFilters" type="Object" />
+        <aura:attribute name="listOfGroupedCalendars" type="List" />
+        <aura:attribute name="monthGroupLimit" type="Integer"  default="4"/>
+        <aura:attribute name="isLoadingMap" type="Object"  />
+        
+        <aura:attribute name="selectedMonth" type="String" />
+        <aura:attribute name="selectedMonthType" type="String" />
+        <aura:attribute name="selectedYear" type="Integer" />
+        <aura:attribute name="selectedGroup1" type="String" default="Dummy"/>
+        <aura:attribute name="selectedGroup2" type="String" default="Program Type"/>
+        <aura:attribute name="isDetailsCmpActive" type="Boolean" default="false"/>
+        <aura:attribute name="isGapCalendarActive" type="Boolean" default="false"/>
+         <aura:attribute name="listOfMonths" type="List" />
+        <aura:attribute name="monthListMap" type="Object" />
+        <aura:attribute name="monthPrefix" type="Object" />
+        <!-- added 3 below by bharat P4 -->
+        <aura:attribute name="monthListMapSpecificsix" type="Object" />
+        <aura:attribute name="monthListMapSpecificthree" type="Object" />
+        <aura:attribute name="headerChangeViewGrid" type="String" />
+        <aura:attribute name="selectMonthFixed" type="String" default="" />
+        
+        <aura:attribute name="calendarSummary" type="List" />
+        <aura:attribute name="calendarDetails" type="List" />
+        
+        <aura:attribute name="mapOfOrderedTypes" type="Object" />
+        <aura:attribute name="mapOfColorCodes" type="Object" />
+        <aura:attribute name="brandColorCodes" type="Object" />
+        <aura:attribute name="promotionalCalendarTypes" type="List" />
+        <aura:attribute name="programTypeDescription" type="Object" />
+        <aura:attribute name="channelIconMap" type="Object" />
+        
+    
+        <div class="maxWidth">
+            <div class="bgimage">
+                
+                
+                <c:CPG_Calendar_TopNav  isDetailsCmpActive ="{!v.isDetailsCmpActive}"/>
+              
+                <div class="BasePage slds-grid slds-wrap">
+                    <div class="slds-col slds-size_1-of-1 slds-large-size_2-of-12 height550">
+                    </div>
+                    <div class="slds-col slds-size_10-of-12 calendarDiv">
+                        <c:CPG_Calendar_MainLanding aura:id="landingCmpId" calendarSummary="{!v.calendarSummary}" 
+                                                 calendarDetails="{!v.calendarDetails}" 
+                                                 selectedMonthType="{!v.selectedMonthType}" selectedYear="{!v.selectedYear}"
+                                                 promotionalCalendarTypes="{!v.promotionalCalendarTypes}" />
+                           </div>
+                </div>
+                <div class="overlay" id="gapOverlay" style="{! v.isGapCalendarActive == true ? 'display:block': 'display:none'}"
+                     onclick="{!c.closeGap}"></div>
+            </div>
+        </div>
+        
+        <div class="slds-hide" id="tooltipMainId">
+            
+            <div class="tooltip " id="Tooltip123456" >
+                <div class="slds-popover slds-popover_tooltip custom-tooltip" role="tooltip" id="toolTipContainerId">
+                    <div class="slds-popover__body slds-p-horizontal_small slds-p-bottom_small">
+                        <p class="tipHeading textOver" id="tooltipcalendarName"></p>
+                        <p class="arial Black_Colour font13 fontBold" id="tooltipDate"></p> 
+                    </div>
+                </div>
+                
+            </div> 
+            
+        </div>
+        
+   
+</aura:component>

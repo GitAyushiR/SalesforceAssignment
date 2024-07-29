@@ -1,0 +1,17 @@
+.THIS.panel{
+    position: relative;
+    margin-left: 480px;	
+    margin-right:580px;
+    margin-top:-300px;
+    width:320px;
+    height:350px;
+}
+.THIS .heading{
+    text-align:center;
+    padding-top:8px;
+    width:320px;
+    height:40px;
+    background-color:#F9A59F;
+    border-top:5px solid red;
+    
+}

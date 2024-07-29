@@ -1,0 +1,44 @@
+.THIS .header{
+    text-align:center;
+    padding-top:0px;
+    width:250px;
+    height:40px;
+    background-color:#F9A59F;
+    border-top:3px solid red;
+  margin-top:22px;
+    margin-left:28px;
+}
+.THIS .head{
+    width:320px;
+    height:420;
+}
+.THIS .header1{
+    text-align:left;
+    border-bottom:3px solid red;
+    background-color:#F6D7D5;
+    margin-left:28px;
+    width:250px;
+    
+}
+.THIS .header2{
+    text-align:left;
+    border-bottom:3px solid red;
+    background-color:#F6D7D5;
+    margin-left:28px;
+    width:250px;
+    
+}
+.THIS .header3{
+    text-align:left;
+    background-color:#F6D7D5;
+    width:250px;
+    margin-left:28px;
+}
+.THIS .ab1{
+    text-align:center;
+    padding-top:8px;
+    width:250px;
+    height:40px;
+    background-color:#F9A59F;
+   
+}

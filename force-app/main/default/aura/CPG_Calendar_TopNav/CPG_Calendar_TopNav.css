@@ -1,0 +1,184 @@
+.THIS .monthBtn {
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+    background-color:#6D8FA3;
+    border-color: rgba(7, 68, 101, 1)
+}
+.THIS .font24{
+    font-size:24px;
+}
+.THIS .Opac60{
+    opacity : 0.6;
+}
+.THIS .monthBtn:hover, .THIS .monthBtn:focus{
+    background-color: #9db5c2;
+    border-color: #6d8fa3;
+}
+.THIS .displayInline{
+    display:inline-block;
+}
+.THIS .breadcrumbHolder{
+    background: #000;
+    opacity: 0.8;
+    min-height: 20px;
+    padding-top: 2px;
+    vertical-align: middle;
+}
+.THIS .breadcrumb__item {
+    font-weight: normal!important;
+    font-size: 11px;
+}
+.THIS .breadcrumb__item a, .THIS .breadcrumb__item a:hover, .THIS .breadcrumb__item a:active {
+    color: #d9d4cd;
+}
+.THIS .right_navigation_white {
+    padding-left: 30px;
+    background-position: 10px 2px;
+    background-size: 7px;
+}
+.THIS .breadcrumb__item.active {
+    color: #b6d7d9;
+}
+.THIS .dateFeild{
+    width: 100px;
+    font-family: arial;
+    display: inline-block;
+    text-align: center;
+    font-size: 27px;
+    vertical-align: top;
+    font-weight: bolder;
+}
+.THIS .Arrow{
+    vertical-align: top;
+    width: 20px;
+    outline: unset;
+    border: unset;
+    margin-top:3px;
+}
+.THIS .Arrow:focus, .THIS .Arrow:active{
+    border:unset !important;
+    box-shadow:unset !important;
+}
+.THIS .arrowColor{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+.THIS .left_navigation, .THIS .right_navigation, .THIS .left_navigation_gray, .THIS .right_navigation_gray{
+    height: 35px;
+}
+.THIS .marginLeft{
+   /* margin-left: -46px;*/
+}
+.THIS .right_navigation, .THIS .right_navigation_gray{
+    margin-left: 3px;
+}
+.THIS .vrlTop{
+    vertical-align:top;
+}
+.THIS .HeadingText{
+    text-align: center;
+    line-height: 0px;
+    margin-bottom: -9px;
+}
+.THIS .HeadingText span{
+    line-height: 30px;
+    margin-bottom: -2px;
+    margin-top: 7px;
+    display: inline-block;
+}
+.THIS .topAlign{
+   /* margin-left: -19px;*/
+}
+.THIS .leftAlign{
+  /*  margin-left: 19px;*/
+}
+/*.THIS .monthBtn:active, .THIS .monthBtn:focus{
+background-color:#9db5c2;
+}*/
+@media only screen and (max-width: 64em){
+    .THIS .marginLeft {
+       /* margin-left: -14px;*/
+    }
+}
+
+@media only screen and (max-width: 1023px){
+    .THIS .marginLeft {
+        margin-left: 0px !important;
+        margin: 15px 0px 10px;
+    }
+    .THIS .topAlign{
+        margin-left: -12px;
+    }
+    .THIS .leftAlign{
+        margin-left: -4px;
+    }
+    .THIS .btnLeft, .THIS .btnRight{
+        max-width:unset;
+    }
+    .THIS .left_navigation, .THIS .right_navigation, .THIS .left_navigation_gray, .THIS .right_navigation_gray {
+        height: 18px;
+    }
+    .THIS .Arrow {
+        width: 10px;
+    }
+    .THIS .dateFeild {
+        width: 60px;
+        font-family: 'Verdana Bold', 'Verdana';
+        font-weight: 700;
+        font-style: normal;
+        font-size: 18px;
+    }
+    .THIS .monthBtn {
+        width: 35px;
+        height: 31px;
+    }
+    .THIS .mobileFont{
+        font-size:20px !important;
+        font-family: 'Verdana Bold', 'Verdana';
+        font-weight: 700;
+    }
+    .THIS .monthMobFont{
+        font-size:7px;
+        font-family:'Verdana';
+        font-weight:400;
+    }
+}
+
+/* download btn */
+.THIS .commonDownloadBtn, .THIS .commonDownloadBtn:active, .THIS .commonDownloadBtn:hover, .THIS .commonDownloadBtn:focus{
+    color: white;
+    font-size: 15px;
+    height:40px;
+    width:200px;
+    border-radius:5px;
+    background-color:#d4af78;
+    border:none;
+    padding: 0 5px;
+}
+.THIS .commonDownloadBtn .download_white{
+    padding-left: 1.4em;
+}
+.THIS .btnAddMargin{
+    margin-left: -175px;
+}
+.THIS .addMarginDownload{
+    margin-right: 30px;
+}
+.THIS .scrollDownload{
+    position: fixed;
+    right: 15px;
+    bottom: 120px;
+    z-index: 250;
+    width: 65px;
+    border: none;
+    height: 65px;
+    padding: 0;
+    background-position: center -6px;
+    background-color: transparent;
+}
+@media only screen and (min-width:320px) and (max-width:767px){
+    .THIS .btnAddMargin{
+        margin-left:0px !important;
+    }
+}

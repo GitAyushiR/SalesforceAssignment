@@ -1,0 +1,43 @@
+.THIS .media-main-section{
+    height:693px;
+    width:1024px;
+}
+
+.THIS .header{
+    margin-top:25px;
+    width:440px;
+    
+}
+.THIS .header p{
+    font-size:51px;
+    display:inline;
+    color:#000;
+    border-bottom: 5px solid;
+    font-family: 'GermaniaOne' ;
+	border-color: #FDE57B; 
+    opacity: 1;
+    line-height: 1.25;
+}
+.THIS .images{
+    margin-left:22px;
+    margin-top:41px;
+}
+.THIS .localinputText{
+    margin-top:33px;
+    width:340px;
+    font-family: 'Josefin_Sans'; 
+        font-size:21px; 
+        letter-spacing: 0.42px;
+        color: #000000; 
+        opacity: 1;
+
+}
+@font-face {
+    font-family: 'GermaniaOne';
+    src: url('/resource/1566988981000/GermaniaOne'); 
+    
+}
+@font-face {
+    font-family:'Josefin_Sans' ;
+    src: url('/resource/1566989749000/Josefin_Sans');
+}

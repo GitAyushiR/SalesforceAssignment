@@ -1,0 +1,56 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" access="global" extends="c:CPG_Calendar_GlobalHoldar">
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+	<aura:registerEvent name="detailsRequestEvent" type="c:CPG_DetailsRequestEvent"/>
+    
+    <aura:attribute name="calendarSummary" type="List" />
+    <aura:attribute name="calendarDetails" type="List" />
+    <aura:attribute name="isDetailsCmpActive" type="Boolean" default="false"/>
+    <aura:attribute name="isGapCalendarActive" type="Boolean" default="false"/>
+    <aura:attribute name="selectedMonth" type="String" />
+    <aura:attribute name="selectedMonthPrefix" type="String" />
+    <aura:attribute name="setUpHeaderConfig" type="Object" />
+    <aura:attribute name="headerConfig" type="Object" />
+    <aura:attribute name="selectedMonthType" type="String" />
+    <aura:attribute name="selectedYear" type="Integer" />
+    <aura:attribute name="calendarDetailConfig" type="Object" />
+    <aura:attribute name="promotionalCalendarTypes" type="List" />
+    <aura:method name="showCalendarHeaderMonths" > <!-- added by bharat P4 -->
+        <aura:attribute name="selectedMonthFix" type="String" />
+    </aura:method>
+    <aura:method name="activateOrDeativateDetailView" > 
+        <aura:attribute name="isActivate" type="Boolean" />
+        <aura:attribute name="isGapCalendarActive" type="Boolean" default="false"/>
+    </aura:method>
+    
+    <aura:method name="configureHeaderRequest" > 
+        <aura:attribute name="selectedYear" type="Integer" />
+        <aura:attribute name="selectedMonthType" type="Integer" />
+        <aura:attribute name="selectedMonth" type="String" /><!-- added by bharat P4 -->
+    </aura:method>
+    
+    <div >
+        <div class="{!v.isDetailsCmpActive == true ? 'slds-grid slds-wrap slds-is-relative month-expand' : 'slds-grid slds-wrap slds-is-relative' }">
+            <div class="menu slds-is-absolute slds-show_large" style="{! v.selectedMonthType == '12' ? 'top: 55px;' : 'top:93px;'}">
+                
+                    <aura:iteration items="{!v.calendarSummary[0].linkedItems}" var="element" >
+                    <div class="national leftLink" style="{# 'background-color:' + element.color +'88' +';'}">
+                        <span class="tootltipSpan" data-tooltip="{#element.description}" data-tooltip-position="right">{#element.name}</span>
+                    </div> 
+                </aura:iteration>
+            
+            </div> 
+           <aura:iteration items="{!v.calendarSummary}" var="element" >
+                
+                <div class="slds-col slds-size_1-of-1 slds-large-size_1-of-12 outerDiv" data-selectedMonth ="{#element.name}"
+                     data-selectedmonthprefix ="{#element.prefix}"
+                     onclick="{!c.expandIt}">
+                    <c:CPG_Calendar_MonthComponent monthSummary="{#element}" selectedMonthType="{!v.selectedMonthType}"/>
+                </div>
+            </aura:iteration>
+           
+          
+            </div>
+           
+    </div>
+</aura:component>

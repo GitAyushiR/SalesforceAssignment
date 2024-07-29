@@ -1,0 +1,160 @@
+.THIS .media-main-section{
+    height:693px;
+    width:1024px;
+}
+.THIS .header{
+    margin-top:40px;
+    width:342px;
+}
+.THIS .header p{
+    font-size:70px;
+    line-height:90px;
+    display:inline;
+    color:#000;
+    border-bottom: 4px solid;
+    font-family: 'GermaniaOne' ;
+    letter-spacing: 0;
+	
+	opacity: 1;
+    font-weight:bold;
+    
+}
+.THIS .images{
+    margin-left:22px;
+    margin-top:41px;
+}
+.THIS .warehouse img{
+    height:181px;
+    width:auto;
+    object-fit:contain;
+}
+.THIS .bottle img{
+    width: 374px;
+    height: 181px;
+    margin-top: 8px;
+}
+.THIS .goldSeal{
+    background-color: #B58B52;
+    opacity: 0.74;
+    width: 142px;
+    height: 181px;
+    margin-top: 8px;
+    margin-left: 9px;
+}
+.THIS .goldSeal img{
+        width: 116px;
+    margin: 33px 15px 32px 11px;
+}
+.THIS .worker{
+    margin-top:8px;
+}
+.THIS .worker img{
+    height:181px;
+    width:auto;
+    object-fit:contain;
+}
+.THIS .heritageText{
+    margin-top:33px;
+    width:357px;
+}
+.THIS .sourceText{
+    text-align:right;
+    margin-left:130px;
+    width:420px;
+    margin-top:17px;
+}
+.THIS .medalDiv{
+   margin-left: 50px; 
+}
+.THIS .medalDiv img{
+    width:201px;
+    height:68px;
+}
+@media only screen and (min-width:320px) and (max-width:767px){
+    .THIS .media-main-section{
+        height:unset;
+        width:100%!important;
+    }
+    .THIS .header{
+        margin: 80px auto 0 auto;
+    	width: 209px;
+    	text-align: center;
+    }
+    .THIS .header p{
+        font-size: 45px;
+    	line-height: 57px;
+    	/* text-align: center; */
+    	display: inline;
+    	color: #000;
+   	 	border-bottom: 4px solid #ED6803;
+    }
+    .THIS .heritageText{
+            margin: 34px auto;
+    width: 264px;
+    text-align: center;
+    }
+    .THIS .medalDiv{
+        width: 207px;
+    margin: 0px auto 0 auto;
+    }
+    .THIS .images{
+        margin: 40px auto 0px auto;
+    }
+    .THIS .bottle{
+        width:54%!important;
+    }
+    .THIS .bottle img{
+            height: 181px;
+    margin-top: 5px;
+    }
+    .THIS .goldSeal{
+            background-color: #b58b52;
+    opacity: .74;
+    width: auto;
+    height: 181px;
+    margin-top: 5px;
+    margin-left: 5px;
+    }
+    .THIS .worker{
+        margin-top:5px;
+    }
+    .THIS .worker img{
+        height: unset;
+    width: 100%!important;
+    object-fit: contain;
+    }
+    .THIS .warehouse img{
+    height:unset;
+    width:100%!important;
+    object-fit:contain;
+}
+    .THIS .sourceText{
+        width: 200px;
+    height: unset;
+        font-size:11px;
+    margin: 20px auto 0 auto;
+    text-align: center;
+        
+    }
+    .THIS .sourceText p{
+        text-align: right;
+        font-size:18px;
+	font-family: 'Josefin_Sans' ;
+	letter-spacing: 0.35px;
+	color: #000;
+	opacity: 1;
+    }
+}
+.THIS .footer{
+        margin-top:470px;
+    }
+
+@font-face {
+    font-family: 'GermaniaOne';
+    src: url('/resource/1566988981000/GermaniaOne'); 
+    
+}
+@font-face {
+    font-family:'Josefin_Sans' ;
+    src: url('/resource/1566989749000/Josefin_Sans');
+}
